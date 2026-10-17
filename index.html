@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Spoken Saudi Arabic for anaesthetists</title>
+<meta name="description" content="102 phrases from the anaesthetic room to recovery, each spoken by a Saudi voice.">
+<meta name="author" content="Dr Ganesh Sivasankara">
+<meta name="theme-color" content="#EFE9DC" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0F1512" media="(prefers-color-scheme: dark)">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="default">
+<meta name="apple-mobile-web-app-title" content="Saudi Arabic">
+<link rel="apple-touch-icon" href="arabic-icon-180.png">
+<link rel="icon" type="image/png" sizes="180x180" href="arabic-icon-180.png">
+<link rel="canonical" href="https://gundoc9.github.io/spoken-saudi-arabic/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Spoken Saudi Arabic for anaesthetists">
+<meta property="og:description" content="102 phrases from the anaesthetic room to recovery, each spoken by a Saudi voice.">
+<meta property="og:url" content="https://gundoc9.github.io/spoken-saudi-arabic/">
+<meta property="og:image" content="https://gundoc9.github.io/spoken-saudi-arabic/spoken-saudi-arabic-card.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="The app's card for Can you open your mouth?, in English, Arabic and transliteration, with its play button.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:creator" content="@gianthealer">
+<meta name="twitter:title" content="Spoken Saudi Arabic for anaesthetists">
+<meta name="twitter:description" content="102 phrases from the anaesthetic room to recovery, each spoken by a Saudi voice.">
+<meta name="twitter:image" content="https://gundoc9.github.io/spoken-saudi-arabic/spoken-saudi-arabic-card.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=Noto+Naskh+Arabic:wght@400;500;600&display=swap">
+<style>
+/* Layout: on a phone the screen is the card (one phrase, Back and Next always in reach);
+   on an iPad or Mac a section rail on the left and the section's phrases in a grid. */
+:root {
+  --bg: #EFE9DC;          /* cream ground */
+  --surface: #F7F3EA;     /* raised paper */
+  --line: #D6CCB6;
+  --line-strong: #A99C7F;
+  --ink: #1C2420;
+  --ink-2: #4D5751;
+  --accent: #0B6B3F;      /* Saudi green, deepened for text */
+  --accent-ink: #FFFFFF;
+  --accent-soft: #DCE6D9;
+  --ring: rgba(11,107,63,.22);
+  --wrong: #A6382E;        /* a wrong quiz answer */
+  --wrong-soft: #F1DEDA;
+  --display: "Newsreader", Georgia, "Times New Roman", serif;
+  --arabic: "Noto Naskh Arabic", "Geeza Pro", "Traditional Arabic", "Arabic Typesetting", serif;
+  --ui: "Instrument Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --en-size: 1.5rem;
+  --ar-size: 2.15rem;
+  --tr-size: 1.1rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0F1512; --surface: #18201C; --line: #2B3630; --line-strong: #56675D; --ink: #EEE8DC; --ink-2: #AFB9B2;
+    --accent: #5CC995; --accent-ink: #0B1710; --accent-soft: #1E3328; --ring: rgba(92,201,149,.25);
+    --wrong: #E8867A; --wrong-soft: #3A2320;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0F1512; --surface: #18201C; --line: #2B3630; --line-strong: #56675D; --ink: #EEE8DC; --ink-2: #AFB9B2;
+  --accent: #5CC995; --accent-ink: #0B1710; --accent-soft: #1E3328; --ring: rgba(92,201,149,.25);
+  --wrong: #E8867A; --wrong-soft: #3A2320;
+  color-scheme: dark;
+}
+
+html { box-sizing: border-box; height: 100%; background: var(--bg); }
+*, *::before, *::after { box-sizing: inherit; }
+body { height: 100%; margin: 0; background: var(--bg); color: var(--ink); font-family: var(--ui);
+  font-size: 16px; line-height: 1.45; -webkit-text-size-adjust: 100%; }
+#app { height: 100%; }
+button { font: inherit; color: inherit; background: none; border: 0; padding: 0; cursor: pointer; }
+button:focus-visible, input:focus-visible + .knob, .toc button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; border-radius: 10px; }
+h1, h2 { text-wrap: balance; }
+p { margin: 0; }
+.ar { font-family: var(--arabic); direction: rtl; text-align: right; unicode-bidi: plaintext; }
+
+/* ---------- shared pieces ---------- */
+.who { display: inline-grid; grid-auto-flow: column; grid-auto-columns: 1fr; background: var(--surface);
+  border: 1px solid var(--line); border-radius: 999px; padding: 3px; gap: 2px; }
+.who button { padding: 9px 14px; border-radius: 999px; font-weight: 500; font-size: .95rem; white-space: nowrap; color: var(--ink-2); }
+.who button[aria-checked="true"] { background: var(--accent); color: var(--accent-ink); }
+.fixed-who { font-size: .95rem; font-weight: 500; color: var(--ink-2); text-align: center; }
+.who .sm { display: none; }
+@media (max-width: 359px) { .who .lg { display: none; } .who .sm { display: inline; } }
+@media (max-width: 419px) { .who.kin .lg { display: none; } .who.kin .sm { display: inline; } }
+
+.play { position: relative; width: 60px; height: 60px; border-radius: 50%; background: var(--accent); color: var(--accent-ink);
+  display: grid; place-items: center; flex: none; transition: transform .12s ease; }
+.play:active { transform: scale(.95); }
+.play .ring { position: absolute; inset: 0; width: 100%; height: 100%; transform: rotate(-90deg); }
+.play .track { fill: none; stroke: transparent; stroke-width: 3; }
+.play .prog { fill: none; stroke: var(--accent-ink); stroke-width: 3; stroke-linecap: round; opacity: 0; }
+.play.on .prog { opacity: .9; }
+/* a clip on its way: the ring turns until the sound starts */
+.play.loading .prog { opacity: .9; stroke-dashoffset: 72 !important; transform-origin: 32px 32px; animation: turning .9s linear infinite; }
+@keyframes turning { to { transform: rotate(360deg); } }
+.tile.loading { animation: breathe 1s ease-in-out infinite; }
+@keyframes breathe { 50% { opacity: .55; } }
+@media (prefers-reduced-motion: reduce) { .play.loading .prog, .tile.loading { animation: none; } }
+.play .glyph { width: 22px; height: 22px; position: relative; }
+.play[disabled] { background: var(--surface); color: var(--ink-2); border: 1px dashed var(--line); cursor: default; }
+/* listen & repeat: the gap for the learner shows as a counting-down ring on a pale button */
+.play.turn { background: var(--accent-soft); color: var(--accent); box-shadow: inset 0 0 0 1.5px var(--accent); }
+.play.turn .prog { opacity: .9; stroke: var(--accent); }
+.tile.turn { border-color: var(--accent); border-style: dashed; }
+.slot { display: grid; min-width: 0; }
+.slot > * { grid-area: 1 / 1; }
+.slot .chips { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+.slot .cue { display: none; align-self: center; font-family: var(--display); font-style: italic; font-size: 1.15rem; color: var(--accent); }
+.actions.gap .chips { visibility: hidden; }
+.actions.gap .cue { display: block; }
+.chip { display: inline-flex; align-items: center; gap: 8px; padding: 9px 14px; border-radius: 999px; border: 1px solid var(--line);
+  font-weight: 500; font-size: .95rem; color: var(--ink-2); background: var(--surface); }
+.chip[aria-pressed="true"] { background: var(--accent-soft); color: var(--ink); border-color: var(--accent); }
+.tag { font-size: .92rem; color: var(--ink-2); }
+.tag b { font-weight: 600; color: var(--ink); }
+.missing { font-size: .92rem; color: var(--ink-2); }
+
+.en { font-family: var(--display); font-weight: 500; font-size: var(--en-size); line-height: 1.25; letter-spacing: -.005em; }
+.label { font-weight: 600; font-size: .95rem; color: var(--accent); }
+.label .letters { font-family: var(--arabic); font-weight: 500; font-size: 1.3em; margin-inline-start: .35em; }
+.say .ar { color: var(--accent); font-size: var(--ar-size); line-height: 1.75; font-weight: 500; }
+.say .tr { font-size: var(--tr-size); line-height: 1.4; color: var(--ink); font-style: italic; font-family: var(--display); }
+
+.reveal { width: 100%; border: 1.5px dashed var(--line-strong); border-radius: 16px; padding: 22px 18px; text-align: left;
+  color: var(--ink-2); font-weight: 500; background: transparent; }
+.reveal span { display: block; color: var(--ink); font-family: var(--display); font-size: 1.15rem; margin-bottom: 4px; }
+
+.switch { display: flex; align-items: center; gap: 12px; cursor: pointer; font-weight: 400; font-size: .95rem; color: var(--ink-2); line-height: 1.3; }
+.switch b { font-weight: 600; color: var(--ink); }
+.switch input { position: absolute; opacity: 0; pointer-events: none; }
+.switch .knob { width: 44px; height: 26px; border-radius: 999px; background: var(--line); position: relative; flex: none; transition: background .15s; }
+.switch .knob::after { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: var(--surface); transition: transform .15s; box-shadow: 0 1px 2px rgba(0,0,0,.2); }
+.switch input:checked + .knob { background: var(--accent); }
+.switch input:checked + .knob::after { transform: translateX(18px); }
+
+/* ---------- phone ---------- */
+.phone { height: 100%; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; }
+.top { position: relative; display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 10px 16px; border-bottom: 1px solid var(--line); min-height: 52px; }
+.top .progress { position: absolute; left: 0; bottom: -1px; height: 2px; background: var(--accent); }
+.top .back { display: inline-flex; align-items: center; gap: 6px; font-weight: 600; color: var(--accent); padding: 6px 2px; }
+.top .where { text-align: right; min-width: 0; font-size: .92rem; color: var(--ink-2); line-height: 1.25; }
+.top .where b { display: block; color: var(--ink); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.stage { overflow: hidden; padding: 22px 20px 16px; display: flex; flex-direction: column; gap: 18px; min-height: 0; }
+.stage .body { display: flex; flex-direction: column; gap: 14px; }
+.stage .say { display: flex; flex-direction: column; gap: 6px; }
+.stage .actions { margin-top: auto; display: flex; align-items: center; gap: 14px; }
+.stage .play { width: 68px; height: 68px; }
+.stage .play .glyph { width: 26px; height: 26px; }
+.dock { display: grid; grid-template-columns: 1fr auto 1fr; align-items: center; gap: 8px; padding: 10px 12px; border-top: 1px solid var(--line); background: var(--bg); }
+.dock .nav { font-weight: 600; padding: 12px 8px; border-radius: 12px; color: var(--accent); }
+.dock .nav:disabled { color: var(--line); cursor: default; }
+.dock .prev { justify-self: start; }
+.dock .next { justify-self: end; }
+.dock .who button { padding: 9px 12px; }
+
+.stage[data-fit="1"] { --en-size: 1.36rem; --ar-size: 1.95rem; --tr-size: 1.04rem; gap: 14px; }
+.stage[data-fit="2"] { --en-size: 1.24rem; --ar-size: 1.75rem; --tr-size: .98rem; gap: 12px; }
+.stage[data-fit="3"] { --en-size: 1.14rem; --ar-size: 1.58rem; --tr-size: .93rem; gap: 10px; padding-top: 14px; }
+.stage[data-fit="4"] { --en-size: 1.05rem; --ar-size: 1.42rem; --tr-size: .88rem; gap: 8px; padding-top: 10px; }
+.stage[data-fit="4"] .say .ar { line-height: 1.6; }
+.stage[data-fit="1"] .tile, .stage[data-fit="2"] .tile { padding: 6px 6px 8px; }
+.stage[data-fit="2"] .tile .ar, .stage[data-fit="3"] .tile .ar, .stage[data-fit="4"] .tile .ar { font-size: 1.12rem; line-height: 1.45; }
+.stage[data-fit="3"] .tile, .stage[data-fit="4"] .tile { padding: 4px 6px 6px; }
+.stage[data-fit="3"] .pain-q .ar, .stage[data-fit="4"] .pain-q .ar { font-size: 1.25rem; }
+.pain-q .missing { display: none; }
+.stage[data-fit="4"] .tiles { gap: 6px; }
+.stage[data-fit="4"] .tile .w { font-size: 1.15rem; }
+.stage[data-fit="4"] .tile .tr { font-size: .8rem; }
+.stage[data-fit="4"] .pain-q { padding-bottom: 8px; gap: 10px; }
+
+/* contents card */
+.toc-card { height: 100%; padding: 20px 20px 12px; display: flex; flex-direction: column; gap: var(--gap, 12px); overflow-y: auto; }
+.toc-card h1 { font-family: var(--display); font-weight: 500; font-size: var(--h1, 1.8rem); line-height: 1.05; letter-spacing: -.015em; margin: 0; }
+.toc-card .lede { color: var(--ink-2); font-size: var(--lede, 1rem); max-width: 42ch; }
+.toc { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.toc li { border-bottom: 1px solid var(--line); }
+.toc button { width: 100%; display: flex; align-items: baseline; gap: 10px; padding: var(--row, 6px) 2px; text-align: left; }
+.toc .t { font-family: var(--display); font-size: var(--toc-t, 1.16rem); font-weight: 500; }
+.toc .c { font-size: .85rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.toc .ar { margin-left: auto; color: var(--accent); font-size: var(--toc-ar, 1.05rem); white-space: nowrap; }
+/* the contents card must fit one screen: it tightens step by step on smaller phones */
+.toc-card[data-fit="1"] { --row: 3px; --gap: 9px; }
+.toc-card[data-fit="2"] { --row: 2px; --gap: 8px; --toc-t: 1.05rem; --toc-ar: .98rem; --h1: 1.6rem; --lede: .94rem; }
+.toc-card[data-fit="3"], .toc-card[data-fit="4"] { --row: 2px; --gap: 7px; --toc-t: 1.02rem; --toc-ar: .95rem; --h1: 1.5rem; --lede: .9rem; }
+.toc-card[data-fit="5"] { --row: 0px; --gap: 6px; --toc-t: 1rem; --toc-ar: .92rem; --h1: 1.4rem; }
+.toc-card[data-fit="3"] .quiz-entry .d, .toc-card[data-fit="4"] .quiz-entry .d, .toc-card[data-fit="5"] .quiz-entry .d { display: none; }
+.toc-card[data-fit="3"] .switch, .toc-card[data-fit="4"] .switch, .toc-card[data-fit="5"] .switch { font-size: .88rem; }
+.toc-card[data-fit="4"] .lede, .toc-card[data-fit="5"] .lede { display: none; }
+.toc-card[data-fit="5"] .quiz-entry { padding-top: 6px; padding-bottom: 6px; }
+.toc-card .foot { margin-top: auto; font-size: .85rem; color: var(--ink-2); }
+.toc-card .modes { display: flex; flex-direction: column; gap: 10px; }
+@media (max-width: 359px) { .toc .ar { display: none; } }
+
+/* listening quiz */
+.quiz-entry { display: grid; grid-template-columns: 1fr auto; column-gap: 12px; align-items: center; text-align: left; width: 100%;
+  padding: 8px 14px 9px; border: 1px solid var(--line); border-radius: 16px; background: var(--surface); }
+.quiz-entry .t { font-family: var(--display); font-size: 1.16rem; font-weight: 500; }
+.quiz-entry .d { grid-column: 1; font-size: .86rem; color: var(--ink-2); line-height: 1.3; }
+.quiz-entry .go { grid-column: 2; grid-row: 1 / 3; font-size: 1.6rem; color: var(--accent); line-height: 1; }
+.quiz { display: flex; flex-direction: column; gap: 16px; min-height: 0; }
+.quiz .lead { font-family: var(--display); font-weight: 500; font-size: 1.25rem; line-height: 1.25; }
+.quiz .hint { color: var(--ink-2); font-size: .95rem; }
+.pools { display: grid; gap: 8px; }
+.pools button { display: flex; align-items: baseline; gap: 10px; text-align: left; padding: 11px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.pools button[aria-checked="true"] { border-color: var(--accent); background: var(--accent-soft); }
+.pools .t { font-family: var(--display); font-size: 1.08rem; font-weight: 500; }
+.pools .c { margin-left: auto; font-size: .85rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.quiz .listen { display: flex; align-items: center; gap: 14px; }
+.opts { display: grid; gap: 10px; }
+.opt { display: flex; align-items: center; gap: 12px; text-align: left; width: 100%; padding: 13px 14px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface);
+  font-family: var(--display); font-size: 1.12rem; line-height: 1.25; transition: background .12s, border-color .12s; }
+.opt .k { flex: none; width: 26px; height: 26px; border-radius: 50%; display: grid; place-items: center; font-family: var(--ui); font-size: .85rem; font-weight: 600; color: var(--ink-2); border: 1px solid var(--line); }
+.opt .mark { margin-left: auto; flex: none; width: 22px; height: 22px; display: none; }
+.opt.right { border-color: var(--accent); background: var(--accent-soft); }
+.opt.right .k { background: var(--accent); color: var(--accent-ink); border-color: var(--accent); }
+.opt.wrong { border-color: var(--wrong); background: var(--wrong-soft); }
+.opt.wrong .k { color: var(--wrong); border-color: var(--wrong); }
+.opt.right .mark, .opt.wrong .mark { display: block; }
+.opt.right .mark { color: var(--accent); } .opt.wrong .mark { color: var(--wrong); }
+.opt[disabled] { cursor: default; }
+.opt.dim { opacity: .55; }
+.quiz .answer { display: flex; flex-direction: column; gap: 4px; padding-top: 12px; border-top: 1px solid var(--line); }
+.quiz .answer .ar { color: var(--accent); font-size: 1.6rem; line-height: 1.6; font-weight: 500; }
+.quiz .answer .tr { font-size: 1rem; font-style: italic; font-family: var(--display); }
+.quiz .verdict { font-weight: 600; }
+.quiz .verdict.no { color: var(--wrong); }
+.quiz .verdict.yes { color: var(--accent); }
+.score { font-family: var(--display); font-weight: 500; font-size: 2.6rem; line-height: 1.05; letter-spacing: -.015em; }
+.missed { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+.missed li { display: flex; flex-direction: column; gap: 2px; padding: 10px 0; border-bottom: 1px solid var(--line); }
+.missed .en { font-size: 1.05rem; }
+.missed .ar { color: var(--accent); font-size: 1.3rem; line-height: 1.55; }
+.missed .tr { font-size: .9rem; font-style: italic; font-family: var(--display); color: var(--ink-2); }
+.btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 22px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font-weight: 600; text-decoration: none; }
+.btn.ghost { background: var(--surface); color: var(--accent); border: 1px solid var(--line); }
+.quiz .row { display: flex; gap: 10px; flex-wrap: wrap; }
+.stage .quiz { flex: 1; min-height: 0; }
+.stage .quiz .answer { margin-top: auto; }
+.stage .missed { flex: 1 1 auto; min-height: 0; overflow-y: auto; }
+.stage[data-fit="1"] .opt, .stage[data-fit="2"] .opt { padding: 10px 12px; font-size: 1.04rem; }
+.stage[data-fit="3"] .opt, .stage[data-fit="4"] .opt { padding: 8px 12px; font-size: .98rem; }
+.stage[data-fit="2"] .quiz .answer .ar, .stage[data-fit="3"] .quiz .answer .ar, .stage[data-fit="4"] .quiz .answer .ar { font-size: 1.35rem; line-height: 1.5; }
+.stage[data-fit="3"] .quiz, .stage[data-fit="4"] .quiz { gap: 10px; }
+.stage[data-fit="3"] .opts, .stage[data-fit="4"] .opts { gap: 7px; }
+.stage[data-fit="4"] .quiz .lead { font-size: 1rem; }
+.stage[data-fit="4"] .quiz .hint { display: none; }
+.stage[data-fit="4"] .quiz { gap: 8px; }
+.stage[data-fit="4"] .opts { gap: 6px; }
+.stage[data-fit="4"] .opt { padding: 6px 10px; font-size: .92rem; line-height: 1.2; gap: 10px; }
+.stage[data-fit="4"] .opt .k { width: 22px; height: 22px; font-size: .78rem; }
+.stage[data-fit="4"] .quiz .listen .play { width: 56px; height: 56px; }
+.stage[data-fit="4"] .quiz .listen .play .glyph { width: 22px; height: 22px; }
+.stage[data-fit="4"] .quiz .answer { padding-top: 8px; gap: 2px; }
+.stage[data-fit="4"] .quiz .answer .ar { font-size: 1.2rem; line-height: 1.4; }
+.stage[data-fit="4"] .quiz .answer .tr { font-size: .9rem; }
+.stage[data-fit="4"] .quiz .verdict { font-size: .92rem; }
+.stage[data-fit="3"] .missed li, .stage[data-fit="4"] .missed li { padding: 6px 0; }
+.quiz-wide { max-width: 640px; display: flex; flex-direction: column; gap: 20px; }
+.quiz-wide .opt { padding: 15px 18px; font-size: 1.18rem; }
+.quiz-wide .answer .ar { font-size: 1.9rem; }
+.rail .quiz-entry { padding: 10px 12px; }
+
+/* pain card */
+.pain-q { display: flex; align-items: center; gap: 14px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
+.pain-q .play { width: 48px; height: 48px; }
+.pain-q .play .glyph { width: 18px; height: 18px; }
+.pain-q .ar { font-size: 1.45rem; color: var(--accent); line-height: 1.6; }
+.pain-q .tr { font-style: italic; font-family: var(--display); }
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px; }
+.tile { border: 1px solid var(--line); background: var(--surface); border-radius: 14px; padding: 8px 8px 10px; text-align: center;
+  display: grid; gap: 1px; justify-items: center; transition: background .12s, border-color .12s; }
+.tile .d { display: flex; justify-content: space-between; width: 100%; align-items: baseline; }
+.tile .w { font-family: var(--display); font-size: 1.35rem; font-weight: 500; font-variant-numeric: tabular-nums; }
+.tile .e { font-family: var(--arabic); font-size: 1.1rem; color: var(--ink-2); }
+.tile .ar { text-align: center; font-size: 1.3rem; color: var(--accent); line-height: 1.55; }
+.tile .tr { font-size: .86rem; font-style: italic; font-family: var(--display); }
+.tile.on { background: var(--accent-soft); border-color: var(--accent); }
+.tile[disabled] { opacity: .65; cursor: default; }
+
+/* ---------- wide ---------- */
+.wide { display: grid; grid-template-columns: minmax(280px, 330px) minmax(0, 1fr); min-height: 100%; }
+.rail { position: sticky; top: 0; align-self: start; height: 100vh; overflow: auto; padding: 34px 26px 26px; border-right: 1px solid var(--line);
+  display: flex; flex-direction: column; gap: 20px; }
+.rail h1 { font-family: var(--display); font-weight: 500; font-size: 2.05rem; line-height: 1.04; letter-spacing: -.015em; margin: 0; }
+.rail .lede { color: var(--ink-2); }
+.rail .group { display: flex; flex-direction: column; gap: 10px; }
+.rail .group > .k { font-size: .9rem; color: var(--ink-2); font-weight: 500; }
+.rail .who { width: 100%; }
+.rail .chip { align-self: flex-start; }
+.rail .toc button { padding: 9px 2px; }
+.rail .toc button[aria-current="true"] .t { color: var(--accent); }
+.rail .toc button[aria-current="true"] { box-shadow: inset 3px 0 0 var(--accent); padding-left: 12px; }
+.rail .foot { margin-top: auto; font-size: .85rem; color: var(--ink-2); display: grid; gap: 6px; }
+.sheet { padding: 38px clamp(22px, 3.6vw, 60px) 48px; min-width: 0; }
+.sec-head { display: grid; gap: 8px; margin-bottom: 26px; max-width: 70ch; }
+.sec-head h2 { font-family: var(--display); font-weight: 500; font-size: clamp(2rem, 3.2vw, 2.8rem); line-height: 1.05; letter-spacing: -.015em; margin: 0; }
+.sec-head .meta { color: var(--ink-2); }
+.sec-head .note { background: var(--accent-soft); border-radius: 12px; padding: 12px 16px; color: var(--ink); }
+.grid { columns: 330px auto; column-gap: 16px; }
+.grid .card { break-inside: avoid; margin-bottom: 16px; }
+.card { background: var(--surface); border: 1px solid var(--line); border-radius: 18px; padding: 18px 20px 16px; display: flex; flex-direction: column; gap: 12px; min-width: 0; }
+.card .head { display: flex; align-items: baseline; gap: 10px; }
+.card .n { font-variant-numeric: tabular-nums; color: var(--ink-2); font-size: .9rem; font-weight: 600; min-width: 1.4em; }
+.card .en { --en-size: 1.22rem; }
+.card .say { display: flex; flex-direction: column; gap: 4px; --ar-size: 1.7rem; --tr-size: 1rem; }
+.card .actions { margin-top: auto; display: flex; align-items: center; gap: 12px; padding-top: 4px; }
+.card .play { width: 52px; height: 52px; }
+.card .play .glyph { width: 20px; height: 20px; }
+.card .reveal { padding: 16px 14px; }
+.sheet .pain-wide { display: grid; gap: 22px; }
+.sheet .pain-wide .tiles { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+@media (min-width: 1000px) { .sheet .pain-wide .tiles { grid-template-columns: repeat(6, minmax(0, 1fr)); } }
+@media (min-width: 1400px) { .sheet .pain-wide .tiles { grid-template-columns: repeat(11, minmax(0, 1fr)); } }
+.sheet .pain-wide .tile { padding: 14px 12px 16px; border-radius: 16px; gap: 4px; }
+.sheet .pain-wide .tile .w { font-size: 2rem; }
+.sheet .pain-wide .tile .e { font-size: 1.45rem; }
+.sheet .pain-wide .tile .ar { font-size: 1.65rem; }
+.sheet .pain-wide .tile .tr { font-size: 1rem; }
+.sheet .pain-wide .pain-q .ar { font-size: 1.9rem; }
+.sheet .pain-wide .pain-q .tr { font-size: 1.1rem; }
+.sheet .pain-wide .pain-q .play { width: 56px; height: 56px; }
+.sec-foot { margin-top: 30px; display: flex; justify-content: flex-end; }
+.sec-foot button { font-weight: 600; color: var(--accent); padding: 12px 4px; font-size: 1.05rem; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+</head>
+<body>
+<div id="app"></div>
+
+<script>
+const DATA = {"title": "Spoken Saudi Arabic for anaesthetists", "sections": [{"id": "start", "title": "Before you start", "note": null, "rows": [{"n": 1, "label": null, "en": "Peace be upon you, good morning. I'm the consultant anaesthetist, Dr Ganesh. How are you today?", "m": {"ar": "السلام عليكم، صباح الخير. أنا استشاري تخدير، دكتور غانيش. كيف حالك اليوم؟", "tr": "as-salamu alaykum, sabah al-khair. ana istishari takhdeer, duktoor Ganesh. kaif haalak il-yoom?", "src": "a/start-01-m.mp3"}, "f": {"ar": "السلام عليكم، صباح الخير. أنا استشاري تخدير، دكتور غانيش. كيف حالِك اليوم؟", "tr": "as-salamu alaykum, sabah al-khair. ana istishari takhdeer, duktoor Ganesh. kaif haalik il-yoom?", "src": "a/start-01-f.mp3"}, "same": false}, {"n": 2, "label": null, "en": "What is your name?", "m": {"ar": "وش اسمك؟", "tr": "wish ism-ak?", "src": "a/start-02-m.mp3"}, "f": {"ar": "وش اسمك؟", "tr": "wish ism-ik?", "src": "a/start-02-f.mp3"}, "same": false}, {"n": 3, "label": null, "en": "Please.", "m": {"ar": "لو سمحت", "tr": "law samaht", "src": "a/start-03-m.mp3"}, "f": {"ar": "لو سمحتي", "tr": "law samahti", "src": "a/start-03-f.mp3"}, "same": false}, {"n": 4, "label": null, "en": "Thank you.", "m": {"ar": "شكرا", "tr": "shukran", "src": "a/start-04.mp3"}, "same": true}, {"n": 5, "label": null, "en": "Yes. No.", "m": {"ar": "إيوه. لا", "tr": "eewah. la.", "src": "a/start-05.mp3"}, "same": true}, {"n": 6, "label": null, "en": "I do not speak Arabic well.", "m": {"ar": "ما أتكلم عربي زين", "tr": "ma atkallam arabi zain", "src": "a/start-06.mp3"}, "same": true}, {"n": 7, "label": null, "en": "Is there someone who speaks English?", "m": {"ar": "فيه أحد يتكلم إنجليزي؟", "tr": "feeh ahad yitkallam ingleezi?", "src": "a/start-07.mp3"}, "same": true}]}, {"id": "preop", "title": "Preoperative questions", "note": null, "rows": [{"n": 1, "label": null, "en": "Did you eat or drink anything?", "m": {"ar": "أكلت ولا شربت شي؟", "tr": "akalt wala sharabt shay?", "src": "a/preop-01-m.mp3"}, "f": {"ar": "أكلتي ولا شربتي شي؟", "tr": "akalti wala sharabti shay?", "src": "a/preop-01-f.mp3"}, "same": false}, {"n": 2, "label": null, "en": "When did you last eat?", "m": {"ar": "متى آخر مرة أكلت؟", "tr": "mata akher marra akalt?", "src": "a/preop-02-m.mp3"}, "f": {"ar": "متى آخر مرة أكلتي؟", "tr": "mata akher marra akalti?", "src": "a/preop-02-f.mp3"}, "same": false}, {"n": 3, "label": null, "en": "Do you have any allergy?", "m": {"ar": "عندك حساسية من شي؟", "tr": "indak hasasiya min shay?", "src": "a/preop-03-m.mp3"}, "f": {"ar": "عندك حساسية من شي؟", "tr": "indik hasasiya min shay?", "src": "a/preop-03-f.mp3"}, "same": false}, {"n": 4, "label": null, "en": "Medicine, food, or latex?", "m": {"ar": "من دواء، أكل، أو لاتكس؟", "tr": "min dawa, akl, aw lateks?", "src": "a/preop-04.mp3"}, "same": true}, {"n": 5, "label": null, "en": "Do you take any medicine?", "m": {"ar": "هل تأخذ أي أدوية؟", "tr": "hal takhodh ayy adwiya?", "src": "a/preop-05-m.mp3"}, "f": {"ar": "هل تأخذين أي أدوية؟", "tr": "hal takhodheen ayy adwiya?", "src": "a/preop-05-f.mp3"}, "same": false}, {"n": 6, "label": null, "en": "Diabetes, pressure, heart, or asthma?", "m": {"ar": "عندك سكر، ضغط، قلب، أو ربو؟", "tr": "indak sikkar, dhaght, galb, aw rabw?", "src": "a/preop-06-m.mp3"}, "f": {"ar": "عندك سكر، ضغط، قلب، أو ربو؟", "tr": "indik sikkar, dhaght, galb, aw rabw?", "src": "a/preop-06-f.mp3"}, "same": false}, {"n": 7, "label": null, "en": "Have you had anaesthesia before?", "m": {"ar": "سبق وسويت تخدير؟", "tr": "sabaq wa sawwait takhdeer?", "src": "a/preop-07-m.mp3"}, "f": {"ar": "سبق وسويتي تخدير؟", "tr": "sabaq wa sawwaiti takhdeer?", "src": "a/preop-07-f.mp3"}, "same": false}, {"n": 8, "label": null, "en": "Any problem with anaesthesia before?", "m": {"ar": "صار معك مشكلة مع التخدير قبل؟", "tr": "sar ma'ak mushkila ma' at-takhdeer gabil?", "src": "a/preop-08-m.mp3"}, "f": {"ar": "صار معك مشكلة مع التخدير قبل؟", "tr": "sar ma'ik mushkila ma' at-takhdeer gabil?", "src": "a/preop-08-f.mp3"}, "same": false}, {"n": 9, "label": null, "en": "Loose teeth, caps, or dentures?", "m": {"ar": "عندك أسنان مخلخلة، تلبيسات، أو طقم؟", "tr": "indak asnan mkhalkhala, talbeesat, aw tuqum?", "src": "a/preop-09-m.mp3"}, "f": {"ar": "عندك أسنان مخلخلة، تلبيسات، أو طقم؟", "tr": "indik asnan mkhalkhala, talbeesat, aw tuqum?", "src": "a/preop-09-f.mp3"}, "same": false}, {"n": 10, "label": null, "en": "Can you open your mouth?", "m": {"ar": "تقدر تفتح فمك؟", "tr": "tigdar tiftah fammak?", "src": "a/preop-10-m.mp3"}, "f": {"ar": "تقدرين تفتحين فمك؟", "tr": "tigdareen tiftaheen fammik?", "src": "a/preop-10-f.mp3"}, "same": false}, {"n": 11, "label": null, "en": "Do you smoke?", "m": {"ar": "تدخن؟", "tr": "tidakhkhin?", "src": "a/preop-11-m.mp3"}, "f": {"ar": "تدخنين؟", "tr": "tidakhkhineen?", "src": "a/preop-11-f.mp3"}, "same": false}, {"n": 12, "label": null, "en": "Are you pregnant?", "m": null, "f": {"ar": "إنتي حامل؟", "tr": "inti hamil?", "src": "a/preop-12-f.mp3"}, "same": false, "only": "f"}, {"n": 13, "label": null, "en": "I will put a needle in your hand.", "m": {"ar": "بحط إبرة في يدك", "tr": "bahutt ibra fi yaddak", "src": "a/preop-13-m.mp3"}, "f": {"ar": "بحط إبرة في يدك", "tr": "bahutt ibra fi yaddik", "src": "a/preop-13-f.mp3"}, "same": false}, {"n": 14, "label": null, "en": "You will sleep. You will not feel the operation.", "m": {"ar": "بتنام، وما بتحس بالعملية", "tr": "bitnaam, wa ma bithiss bil-amaliya", "src": "a/preop-14-m.mp3"}, "f": {"ar": "بتنامين، وما بتحسين بالعملية", "tr": "bitnameen, wa ma bithisseen bil-amaliya", "src": "a/preop-14-f.mp3"}, "same": false}, {"n": 15, "label": null, "en": "Do you agree?", "m": {"ar": "موافق؟", "tr": "muwafiq?", "src": "a/preop-15-m.mp3"}, "f": {"ar": "موافقة؟", "tr": "muwafqa?", "src": "a/preop-15-f.mp3"}, "same": false}]}, {"id": "theatre", "title": "In theatre", "note": null, "rows": [{"n": 1, "label": null, "en": "Lie on your back.", "m": {"ar": "نام على ظهرك", "tr": "nam ala dhahrak", "src": "a/theatre-01-m.mp3"}, "f": {"ar": "نامي على ظهرك", "tr": "nami ala dhahrik", "src": "a/theatre-01-f.mp3"}, "same": false}, {"n": 2, "label": null, "en": "Open your mouth.", "m": {"ar": "افتح فمك", "tr": "iftah fammak", "src": "a/theatre-02-m.mp3"}, "f": {"ar": "افتحي فمك", "tr": "iftahi fammik", "src": "a/theatre-02-f.mp3"}, "same": false}, {"n": 3, "label": null, "en": "Stick out your tongue.", "m": {"ar": "طلع لسانك", "tr": "talli' lisanak", "src": "a/theatre-03-m.mp3"}, "f": {"ar": "طلعي لسانك", "tr": "talli'i lisanik", "src": "a/theatre-03-f.mp3"}, "same": false}, {"n": 4, "label": null, "en": "Breathe deeply.", "m": {"ar": "خذ نفس عميق", "tr": "khudh nafas ameeq", "src": "a/theatre-04-m.mp3"}, "f": {"ar": "خذي نفس عميق", "tr": "khudhi nafas ameeq", "src": "a/theatre-04-f.mp3"}, "same": false}, {"n": 5, "label": null, "en": "Breathe through the mask.", "m": {"ar": "تنفس من الكمامة", "tr": "tanaffas min al-kamama", "src": "a/theatre-05-m.mp3"}, "f": {"ar": "تنفسي من الكمامة", "tr": "tanaffasi min al-kamama", "src": "a/theatre-05-f.mp3"}, "same": false}, {"n": 6, "label": null, "en": "You will feel sleepy now.", "m": {"ar": "بتحس بنعاس الحين", "tr": "bithiss bi-na'as al-heen", "src": "a/theatre-06-m.mp3"}, "f": {"ar": "بتحسين بنعاس الحين", "tr": "bithisseen bi-na'as al-heen", "src": "a/theatre-06-f.mp3"}, "same": false}, {"n": 7, "label": null, "en": "Open your eyes.", "m": {"ar": "افتح عيونك", "tr": "iftah oyoonak", "src": "a/theatre-07-m.mp3"}, "f": {"ar": "افتحي عيونك", "tr": "iftahi oyoonik", "src": "a/theatre-07-f.mp3"}, "same": false}, {"n": 8, "label": null, "en": "Do not move.", "m": {"ar": "لا تتحرك", "tr": "la titaharrak", "src": "a/theatre-08-m.mp3"}, "f": {"ar": "لا تتحركين", "tr": "la titaharrakeen", "src": "a/theatre-08-f.mp3"}, "same": false}, {"n": 9, "label": null, "en": "Stay still.", "m": {"ar": "خلك ثابت", "tr": "khallak thabit", "src": "a/theatre-09-m.mp3"}, "f": {"ar": "خلك ثابتة", "tr": "khallik thabita", "src": "a/theatre-09-f.mp3"}, "same": false}, {"n": 10, "label": null, "en": "Where is the pain?", "m": {"ar": "وين الألم؟", "tr": "wain al-alam?", "src": "a/theatre-10.mp3"}, "same": true}, {"n": 11, "label": null, "en": "From zero to ten, how much?", "m": {"ar": "من صفر لعشرة، كم الألم؟", "tr": "min sifr la ashara, kam al-alam?", "src": "a/theatre-11.mp3"}, "same": true}, {"n": 12, "label": null, "en": "Tell me if you feel pain.", "m": {"ar": "قول لي إذا حسيت بألم", "tr": "gool li idha hassait bi-alam", "src": "a/theatre-12-m.mp3"}, "f": {"ar": "قولي لي إذا حسيتي بألم", "tr": "gooli li idha hassaiti bi-alam", "src": "a/theatre-12-f.mp3"}, "same": false}, {"n": 13, "label": null, "en": "You may feel pressure, not pain.", "m": {"ar": "ممكن تحس ضغط، مو ألم", "tr": "mumkin tihiss dhaght, moo alam", "src": "a/theatre-13-m.mp3"}, "f": {"ar": "ممكن تحسين ضغط، مو ألم", "tr": "mumkin tihisseen dhaght, moo alam", "src": "a/theatre-13-f.mp3"}, "same": false}, {"n": 14, "label": null, "en": "This is cold.", "m": {"ar": "هذا بارد", "tr": "hadha barid", "src": "a/theatre-14.mp3"}, "same": true}, {"n": 15, "label": null, "en": "Cough.", "m": {"ar": "كُحّ", "tr": "kuhh", "src": "a/theatre-15-m.mp3"}, "f": {"ar": "كُحّي", "tr": "kuhhi", "src": "a/theatre-15-f.mp3"}, "same": false}]}, {"id": "recovery", "title": "Recovery", "note": null, "rows": [{"n": 1, "label": null, "en": "The operation is finished.", "m": {"ar": "خلصت العملية", "tr": "khallasat al-amaliya", "src": "a/recovery-01.mp3"}, "same": true}, {"n": 2, "label": null, "en": "You are in the recovery room.", "m": {"ar": "أنت في غرفة الإفاقة", "tr": "inta fi ghurfat al-ifaqa", "src": "a/recovery-02-m.mp3"}, "f": {"ar": "إنتي في غرفة الإفاقة", "tr": "inti fi ghurfat al-ifaqa", "src": "a/recovery-02-f.mp3"}, "same": false}, {"n": 3, "label": null, "en": "Breathe slowly.", "m": {"ar": "تنفس بهدوء", "tr": "tanaffas bi-hudoo'", "src": "a/recovery-03-m.mp3"}, "f": {"ar": "تنفسي بهدوء", "tr": "tanaffasi bi-hudoo'", "src": "a/recovery-03-f.mp3"}, "same": false}, {"n": 4, "label": null, "en": "Do you feel sick?", "m": {"ar": "تحس بغثيان؟", "tr": "tihiss bi-ghathayan?", "src": "a/recovery-04-m.mp3"}, "f": {"ar": "تحسين بغثيان؟", "tr": "tihisseen bi-ghathayan?", "src": "a/recovery-04-f.mp3"}, "same": false}, {"n": 5, "label": null, "en": "Do you want water?", "m": {"ar": "تبي موية؟", "tr": "tabi moya?", "src": "a/recovery-05-m.mp3"}, "f": {"ar": "تبين موية؟", "tr": "tabeen moya?", "src": "a/recovery-05-f.mp3"}, "same": false}, {"n": 6, "label": null, "en": "Pain medicine is coming.", "m": {"ar": "دواء الألم جاي", "tr": "dawa al-alam jay", "src": "a/recovery-06.mp3"}, "same": true}, {"n": 7, "label": null, "en": "Your family is outside.", "m": {"ar": "أهلك برا", "tr": "ahlak barra", "src": "a/recovery-07-m.mp3"}, "f": {"ar": "أهلك برا", "tr": "ahlik barra", "src": "a/recovery-07-f.mp3"}, "same": false}, {"n": 8, "label": null, "en": "May God give you health.", "m": {"ar": "الله يعافيك", "tr": "allah ya'afeek", "src": "a/recovery-08-m.mp3"}, "f": {"ar": "الله يعافيكِ", "tr": "allah ya'afeeki", "src": "a/recovery-08-f.mp3"}, "same": false}]}, {"id": "type", "title": "Type of anaesthetic", "note": "These lines name the anaesthetic and ask for agreement. Risks and the full consent go through an interpreter.", "rows": [{"n": 1, "label": "Consent", "en": "We need your consent for the anaesthetic.", "m": {"ar": "نحتاج الموافقة على التخدير", "tr": "nihtaaj al-muwafaqa ala at-takhdeer", "src": "a/type-01.mp3"}, "same": true}, {"n": 2, "label": "General anaesthetic", "en": "We will give you a full general anaesthetic. You will sleep, and you will not feel the operation. Do you agree?", "m": {"ar": "بنسوي لك تخدير كامل. بتنام، وما بتحس بالعملية. توافق؟", "tr": "binsawwi lak takhdeer kamil. bitnaam, wa ma bithiss bil-amaliya. twaafiq?", "src": "a/type-02-m.mp3"}, "f": {"ar": "بنسوي لكِ تخدير كامل. بتنامين، وما بتحسين بالعملية. توافقين؟", "tr": "binsawwi lik takhdeer kamil. bitnameen, wa ma bithisseen bil-amaliya. twaafiqeen?", "src": "a/type-02-f.mp3"}, "same": false}, {"n": 3, "label": "Spinal", "en": "A needle in your back. You stay awake. The lower part goes numb. Do you agree?", "m": {"ar": "بنسوي لك تخدير نصفي، إبرة في الظهر. بتبقى صاحي، والجزء الي تحت راح يتخدر. توافق؟", "tr": "binsawwi lak takhdeer nusfi, ibra fil dhahr. bitibqa sahi, wal-juz' illi taht rah yitkhaddar. twaafiq?", "src": "a/type-03-m.mp3"}, "f": {"ar": "بنسوي لكِ تخدير نصفي، إبرة في الظهر. بتبقين صاحية، والجزء الي تحت راح يتخدر. توافقين؟", "tr": "binsawwi lik takhdeer nusfi, ibra fil dhahr. bitibqeen sahya, wal-juz' illi taht rah yitkhaddar. twaafiqeen?", "src": "a/type-03-f.mp3"}, "same": false}, {"n": 4, "label": "Epidural", "en": "A thin tube in your back. You stay awake, and we can give more medicine through it. Do you agree?", "m": {"ar": "بنسوي لك إبيدورال، قسطرة في الظهر. بتبقى صاحي، ونقدر نزيد الدواء من خلالها. توافق؟", "tr": "binsawwi lak ebidural, qastara fil dhahr. bitibqa sahi, wa nigdar nizeed ad-dawa min khilaalha. twaafiq?", "src": "a/type-04-m.mp3"}, "f": {"ar": "بنسوي لكِ إبيدورال، قسطرة في الظهر. بتبقين صاحية، ونقدر نزيد الدواء من خلالها. توافقين؟", "tr": "binsawwi lik ebidural, qastara fil dhahr. bitibqeen sahya, wa nigdar nizeed ad-dawa min khilaalha. twaafiqeen?", "src": "a/type-04-f.mp3"}, "same": false}, {"n": 5, "label": "Nerve block", "en": "We numb the nerve in this area with a needle, to reduce the pain. You may stay awake. Do you agree?", "m": {"ar": "بنخدر العصب في المنطقة بإبرة، عشان نخفف الألم. ممكن تبقى صاحي. توافق؟", "tr": "binkhaddir al-asab fil mantiqa bi-ibra, ashan nkhaffif al-alam. mumkin tibqa sahi. twaafiq?", "src": "a/type-05-m.mp3"}, "f": {"ar": "بنخدر العصب في المنطقة بإبرة، عشان نخفف الألم. ممكن تبقين صاحية. توافقين؟", "tr": "binkhaddir al-asab fil mantiqa bi-ibra, ashan nkhaffif al-alam. mumkin tibqeen sahya. twaafiqeen?", "src": "a/type-05-f.mp3"}, "same": false}, {"n": 6, "label": "Sedation", "en": "Medicine to relax you and make you sleepy. Not a full sleep. Do you agree?", "m": {"ar": "بنعطيك دواء يريحك وينعّسك. مو نوم كامل، بس بتكون هادي. توافق؟", "tr": "bin'ateek dawa yrayyihak wa yina''sak. moo nawm kamil, bas bitkoon hadi. twaafiq?", "src": "a/type-06-m.mp3"}, "f": {"ar": "بنعطيكِ دواء يريحكِ وينعّسكِ. مو نوم كامل، بس بتكونين هادية. توافقين؟", "tr": "bin'ateeki dawa yrayyihik wa yina''sik. moo nawm kamil, bas bitkooneen hadya. twaafiqeen?", "src": "a/type-06-f.mp3"}, "same": false}, {"n": 7, "label": "Local anaesthetic", "en": "We numb the place with a needle. You stay awake. Do you agree?", "m": {"ar": "بنخدر المكان بإبرة موضعية. بتبقى صاحي. توافق؟", "tr": "binkhaddir al-makan bi-ibra mawdi'iyya. bitibqa sahi. twaafiq?", "src": "a/type-07-m.mp3"}, "f": {"ar": "بنخدر المكان بإبرة موضعية. بتبقين صاحية. توافقين؟", "tr": "binkhaddir al-makan bi-ibra mawdi'iyya. bitibqeen sahya. twaafiqeen?", "src": "a/type-07-f.mp3"}, "same": false}, {"n": 8, "label": "Cannula", "en": "We will put a needle in your hand before we start the anaesthetic.", "m": {"ar": "بنحط لك إبرة في اليد قبل ما نبدأ التخدير", "tr": "binhutt lak ibra fil yad gabil ma nabda at-takhdeer", "src": "a/type-08-m.mp3"}, "f": {"ar": "بنحط لكِ إبرة في اليد قبل ما نبدأ التخدير", "tr": "binhutt lik ibra fil yad gabil ma nabda at-takhdeer", "src": "a/type-08-f.mp3"}, "same": false}]}, {"id": "child", "title": "Child, said to the parent", "note": null, "rows": [{"n": 1, "label": "Gas induction, son", "en": "Your son will sleep first with gas on the mask. After he is asleep, we put the needle in his hand.", "m": {"ar": "ولدك بننوّمه أول بالغاز على الكمامة، وبعد ما ينام نحط الإبرة في يده", "tr": "waldak binnawwimuh awwal bil-ghaaz ala al-kamama, wa ba'd ma yinam nhutt al-ibra fi yadduh", "src": "a/child-01-m.mp3"}, "f": {"ar": "ولدِك بننوّمه أول بالغاز على الكمامة، وبعد ما ينام نحط الإبرة في يده", "tr": "waldik binnawwimuh awwal bil-ghaaz ala al-kamama, wa ba'd ma yinam nhutt al-ibra fi yadduh", "src": "a/child-01-f.mp3"}, "same": false}, {"n": 2, "label": "Gas induction, daughter", "en": "Your daughter will sleep first with gas on the mask. After she is asleep, we put the needle in her hand.", "m": {"ar": "بنتك بننوّمها أول بالغاز على الكمامة، وبعد ما تنام نحط الإبرة في يدها", "tr": "bintak binnawwimha awwal bil-ghaaz ala al-kamama, wa ba'd ma tinam nhutt al-ibra fi yaddha", "src": "a/child-02-m.mp3"}, "f": {"ar": "بنتِك بننوّمها أول بالغاز على الكمامة، وبعد ما تنام نحط الإبرة في يدها", "tr": "bintik binnawwimha awwal bil-ghaaz ala al-kamama, wa ba'd ma tinam nhutt al-ibra fi yaddha", "src": "a/child-02-f.mp3"}, "same": false}, {"n": 3, "label": "Premedication, son", "en": "We will give your son medicine by mouth or nose to calm him. It takes about 30 minutes to work.", "m": {"ar": "بنعطي ولدك دواء من الفم أو الأنف عشان يهدى. ياخذ حوالي ثلاثين دقيقة عشان يشتغل", "tr": "bin'ati waldak dawa min al-fam aw al-anf ashan yahda. yakhodh hawali thalatheen daqiqa ashan yishtaghil", "src": "a/child-03-m.mp3"}, "f": {"ar": "بنعطي ولدِك دواء من الفم أو الأنف عشان يهدى. ياخذ حوالي ثلاثين دقيقة عشان يشتغل", "tr": "bin'ati waldik dawa min al-fam aw al-anf ashan yahda. yakhodh hawali thalatheen daqiqa ashan yishtaghil", "src": "a/child-03-f.mp3"}, "same": false}, {"n": 4, "label": "Premedication, daughter", "en": "We will give your daughter medicine by mouth or nose to calm her. It takes about 30 minutes to work.", "m": {"ar": "بنعطي بنتك دواء من الفم أو الأنف عشان تهدى. ياخذ حوالي ثلاثين دقيقة عشان يشتغل", "tr": "bin'ati bintak dawa min al-fam aw al-anf ashan tahda. yakhodh hawali thalatheen daqiqa ashan yishtaghil", "src": "a/child-04-m.mp3"}, "f": {"ar": "بنعطي بنتِك دواء من الفم أو الأنف عشان تهدى. ياخذ حوالي ثلاثين دقيقة عشان يشتغل", "tr": "bin'ati bintik dawa min al-fam aw al-anf ashan tahda. yakhodh hawali thalatheen daqiqa ashan yishtaghil", "src": "a/child-04-f.mp3"}, "same": false}]}, {"id": "pain", "title": "Pain score", "note": null, "rows": [{"n": 0, "m": {"ar": "صفر", "tr": "sifr", "src": "a/pain-00.mp3"}, "same": true}, {"n": 1, "m": {"ar": "واحد", "tr": "wahid", "src": "a/pain-01.mp3"}, "same": true}, {"n": 2, "m": {"ar": "اثنين", "tr": "ithnain", "src": "a/pain-02.mp3"}, "same": true}, {"n": 3, "m": {"ar": "ثلاثة", "tr": "thalatha", "src": "a/pain-03.mp3"}, "same": true}, {"n": 4, "m": {"ar": "أربعة", "tr": "arba'a", "src": "a/pain-04.mp3"}, "same": true}, {"n": 5, "m": {"ar": "خمسة", "tr": "khamsa", "src": "a/pain-05.mp3"}, "same": true}, {"n": 6, "m": {"ar": "ستة", "tr": "sitta", "src": "a/pain-06.mp3"}, "same": true}, {"n": 7, "m": {"ar": "سبعة", "tr": "sab'a", "src": "a/pain-07.mp3"}, "same": true}, {"n": 8, "m": {"ar": "ثمانية", "tr": "thamaniya", "src": "a/pain-08.mp3"}, "same": true}, {"n": 9, "m": {"ar": "تسعة", "tr": "tis'a", "src": "a/pain-09.mp3"}, "same": true}, {"n": 10, "m": {"ar": "عشرة", "tr": "ashara", "src": "a/pain-10.mp3"}, "same": true}]}, {"id": "mum", "title": "Taking a child to theatre", "note": "Said to the mother of a boy. Lines 8 and 9 are said to the child.", "rows": [{"n": 1, "label": null, "en": "Hello, I'm the anaesthesia doctor, and I'll be with your son for the whole operation.", "f": {"ar": "السلام عليكم، أنا دكتور التخدير، وبكون مع ولدك طول العملية", "tr": "as-salamu alaykum, ana duktoor at-takhdeer, w-bakoon ma' waladik tool al-amaliya", "src": "a/mum-01.mp3"}, "only": "f"}, {"n": 2, "label": null, "en": "When did he last eat? What did he eat?", "f": {"ar": "متى آخر مرة أكل؟ وش أكل؟", "tr": "mata akher marra akal? wish akal?", "src": "a/mum-02.mp3"}, "only": "f"}, {"n": 3, "label": null, "en": "When did he last drink? Water, juice or milk?", "f": {"ar": "متى آخر مرة شرب؟ موية ولا عصير ولا حليب؟", "tr": "mata akher marra shirib? moya wala aseer wala haleeb?", "src": "a/mum-03.mp3"}, "only": "f"}, {"n": 4, "label": null, "en": "Is he allergic to any medicine or food?", "f": {"ar": "عنده حساسية من أي دوا أو أكل؟", "tr": "indah hasasiya min ay dawa aw akl?", "src": "a/mum-04.mp3"}, "only": "f"}, {"n": 5, "label": null, "en": "Has he had a cold, cough or fever in the last two weeks?", "f": {"ar": "صار عنده زكمة أو كحة أو حرارة في آخر أسبوعين؟", "tr": "sar indah zukma aw kahha aw harara fi akher usboo'ain?", "src": "a/mum-05.mp3"}, "only": "f"}, {"n": 6, "label": null, "en": "Does he have a loose tooth?", "f": {"ar": "عنده سن يتحرك؟", "tr": "indah sinn yitaharrak?", "src": "a/mum-06.mp3"}, "only": "f"}, {"n": 7, "label": null, "en": "You can come in with him until he falls asleep.", "f": {"ar": "ممكن تدخلين معه لين ينام", "tr": "mumkin tidkhaleen ma'ah lain yinam", "src": "a/mum-07.mp3"}, "only": "f"}, {"n": 8, "label": "To the child", "en": "Don't be scared, sweetheart, Mum is right here next to you.", "f": {"ar": "لا تخاف حبيبي، ماما هنا جنبك", "tr": "la tkhaf habeebi, mama hina jambak", "src": "a/mum-08.mp3"}, "only": "f"}, {"n": 9, "label": "To the child", "en": "Breathe normally. You'll smell something a bit strange, but it doesn't hurt.", "f": {"ar": "تنفس عادي. بتشم ريحة غريبة شوي، بس ما يعور", "tr": "tanaffas aadi. bitshimm reeha ghareeba shway, bas ma y'awwir", "src": "a/mum-09.mp3"}, "only": "f"}, {"n": 10, "label": null, "en": "He's asleep now. Please wait for him outside, and we'll call you as soon as he wakes up.", "f": {"ar": "خلاص نام. انتظريه برا الله يعافيك، وبنناديك أول ما يصحى", "tr": "khalas naam. intadhreeh barra allah ya'afeeki, w-binnaadeeki awwal ma yis-ha", "src": "a/mum-10.mp3"}, "only": "f"}]}, {"id": "back", "title": "What you'll hear back", "note": "What patients often say back. Here the switch changes who is speaking.", "rows": [{"n": 1, "label": "Short answers", "en": "Yes.", "same": false, "m": {"ar": "إيه", "tr": "eeh", "src": "a/back-01-m.mp3"}, "f": {"ar": "إيه", "tr": "eeh", "src": "a/back-01-f.mp3"}}, {"n": 2, "label": "Short answers", "en": "A little.", "same": false, "m": {"ar": "شوي", "tr": "shway", "src": "a/back-02-m.mp3"}, "f": {"ar": "شوي", "tr": "shway", "src": "a/back-02-f.mp3"}}, {"n": 3, "label": "Short answers", "en": "I don't know.", "same": false, "m": {"ar": "ما أدري", "tr": "ma adri", "src": "a/back-03-m.mp3"}, "f": {"ar": "ما أدري", "tr": "ma adri", "src": "a/back-03-f.mp3"}}, {"n": 4, "label": "Short answers", "en": "Fine, thank God.", "same": false, "m": {"ar": "الحمد لله، بخير", "tr": "al-hamdu lillah, bikhair", "src": "a/back-04-m.mp3"}, "f": {"ar": "الحمد لله، بخير", "tr": "al-hamdu lillah, bikhair", "src": "a/back-04-f.mp3"}}, {"n": 5, "label": "Before the operation", "en": "I'm allergic to penicillin.", "same": false, "m": {"ar": "عندي حساسية من البنسلين", "tr": "indi hasasiya min al-binsileen", "src": "a/back-05-m.mp3"}, "f": {"ar": "عندي حساسية من البنسلين", "tr": "indi hasasiya min al-binsileen", "src": "a/back-05-f.mp3"}}, {"n": 6, "label": "Before the operation", "en": "I haven't eaten since last night.", "same": false, "m": {"ar": "ما أكلت من البارحة", "tr": "ma akalt min al-baariha", "src": "a/back-06-m.mp3"}, "f": {"ar": "ما أكلت من البارحة", "tr": "ma akalt min al-baariha", "src": "a/back-06-f.mp3"}}, {"n": 7, "label": "Before the operation", "en": "I had some water this morning.", "same": false, "m": {"ar": "شربت موية الصبح", "tr": "shiribt moya is-subh", "src": "a/back-07-m.mp3"}, "f": {"ar": "شربت موية الصبح", "tr": "shiribt moya is-subh", "src": "a/back-07-f.mp3"}}, {"n": 8, "label": "Before the operation", "en": "I take blood pressure tablets.", "same": false, "m": {"ar": "آخذ حبوب ضغط", "tr": "aakhudh huboob dhaght", "src": "a/back-08-m.mp3"}, "f": {"ar": "آخذ حبوب ضغط", "tr": "aakhudh huboob dhaght", "src": "a/back-08-f.mp3"}}, {"n": 9, "label": "Before the operation", "en": "I have diabetes.", "same": false, "m": {"ar": "عندي سكر", "tr": "indi sikkar", "src": "a/back-09-m.mp3"}, "f": {"ar": "عندي سكر", "tr": "indi sikkar", "src": "a/back-09-f.mp3"}}, {"n": 10, "label": "Before the operation", "en": "I was unwell after my last anaesthetic.", "same": false, "m": {"ar": "تعبت من البنج المرة الي فاتت", "tr": "ti'ibt min al-binj al-marra illi faatat", "src": "a/back-10-m.mp3"}, "f": {"ar": "تعبت من البنج المرة الي فاتت", "tr": "ti'ibt min al-binj al-marra illi faatat", "src": "a/back-10-f.mp3"}}, {"n": 11, "label": "Before the operation", "en": "I'm scared.", "same": false, "m": {"ar": "خايف", "tr": "khaayif", "src": "a/back-11-m.mp3"}, "f": {"ar": "خايفة", "tr": "khaayfa", "src": "a/back-11-f.mp3"}}, {"n": 12, "label": "Before the operation", "en": "Will it hurt?", "same": false, "m": {"ar": "بيوجعني؟", "tr": "bi-yooja'ni?", "src": "a/back-12-m.mp3"}, "f": {"ar": "بيوجعني؟", "tr": "bi-yooja'ni?", "src": "a/back-12-f.mp3"}}, {"n": 13, "label": "After the operation", "en": "Is it over?", "same": false, "m": {"ar": "خلصت العملية؟", "tr": "khilsat al-amaliyya?", "src": "a/back-13-m.mp3"}, "f": {"ar": "خلصت العملية؟", "tr": "khilsat al-amaliyya?", "src": "a/back-13-f.mp3"}}, {"n": 14, "label": "After the operation", "en": "It hurts here.", "same": false, "m": {"ar": "يوجعني هنا", "tr": "yooja'ni hina", "src": "a/back-14-m.mp3"}, "f": {"ar": "يوجعني هنا", "tr": "yooja'ni hina", "src": "a/back-14-f.mp3"}}, {"n": 15, "label": "After the operation", "en": "My throat hurts.", "same": false, "m": {"ar": "حلقي يوجعني", "tr": "halgi yooja'ni", "src": "a/back-15-m.mp3"}, "f": {"ar": "حلقي يوجعني", "tr": "halgi yooja'ni", "src": "a/back-15-f.mp3"}}, {"n": 16, "label": "After the operation", "en": "I'm going to be sick.", "same": false, "m": {"ar": "بستفرغ", "tr": "bastafrigh", "src": "a/back-16-m.mp3"}, "f": {"ar": "بستفرغ", "tr": "bastafrigh", "src": "a/back-16-f.mp3"}}, {"n": 17, "label": "After the operation", "en": "I'm cold.", "same": false, "m": {"ar": "بردان", "tr": "bardaan", "src": "a/back-17-m.mp3"}, "f": {"ar": "بردانة", "tr": "bardaana", "src": "a/back-17-f.mp3"}}, {"n": 18, "label": "After the operation", "en": "I'm thirsty.", "same": false, "m": {"ar": "عطشان", "tr": "atshaan", "src": "a/back-18-m.mp3"}, "f": {"ar": "عطشانة", "tr": "atshaana", "src": "a/back-18-f.mp3"}}, {"n": 19, "label": "After the operation", "en": "I feel dizzy.", "same": false, "m": {"ar": "أحس بدوخة", "tr": "ahiss bi-dookha", "src": "a/back-19-m.mp3"}, "f": {"ar": "أحس بدوخة", "tr": "ahiss bi-dookha", "src": "a/back-19-f.mp3"}}, {"n": 20, "label": "After the operation", "en": "I'm itchy.", "same": false, "m": {"ar": "جسمي يحكني", "tr": "jismi yihikkni", "src": "a/back-20-m.mp3"}, "f": {"ar": "جسمي يحكني", "tr": "jismi yihikkni", "src": "a/back-20-f.mp3"}}, {"n": 21, "label": "After the operation", "en": "I can't feel my legs.", "same": false, "m": {"ar": "ما أحس برجولي", "tr": "ma ahiss bi-rjooli", "src": "a/back-21-m.mp3"}, "f": {"ar": "ما أحس برجولي", "tr": "ma ahiss bi-rjooli", "src": "a/back-21-f.mp3"}}, {"n": 22, "label": "After the operation", "en": "I need the toilet.", "same": false, "m": {"ar": "أبي الحمام", "tr": "abi al-hammaam", "src": "a/back-22-m.mp3"}, "f": {"ar": "أبي الحمام", "tr": "abi al-hammaam", "src": "a/back-22-f.mp3"}}, {"n": 23, "label": "After the operation", "en": "Where is my family?", "same": false, "m": {"ar": "وين أهلي؟", "tr": "wein ahli?", "src": "a/back-23-m.mp3"}, "f": {"ar": "وين أهلي؟", "tr": "wein ahli?", "src": "a/back-23-f.mp3"}}, {"n": 24, "label": "After the operation", "en": "When can I eat?", "same": false, "m": {"ar": "متى أقدر آكل؟", "tr": "mata agdar aakul?", "src": "a/back-24-m.mp3"}, "f": {"ar": "متى أقدر آكل؟", "tr": "mata agdar aakul?", "src": "a/back-24-f.mp3"}}]}, {"id": "sounds", "title": "Saying the sounds", "note": "How the spelling under each phrase works. Each example plays a phrase from the app.", "rows": [{"n": 1, "label": "kh", "letters": "خ", "en": "Like the ch in Scottish ‘loch’. Listen for khudh.", "from": "theatre-4", "same": true, "m": {"ar": "خذ نفس عميق", "tr": "khudh nafas ameeq", "src": "a/theatre-04-m.mp3"}}, {"n": 2, "label": "gh", "letters": "غ", "en": "The same sound with your voice on, close to a French r. Listen for dhaght.", "from": "preop-6", "same": true, "m": {"ar": "عندك سكر، ضغط، قلب، أو ربو؟", "tr": "indak sikkar, dhaght, galb, aw rabw?", "src": "a/preop-06-m.mp3"}}, {"n": 3, "label": "h", "letters": "ح", "en": "h also stands for ح, a stronger h breathed from low in the throat. Listen for hasasiya.", "from": "preop-3", "same": true, "m": {"ar": "عندك حساسية من شي؟", "tr": "indak hasasiya min shay?", "src": "a/preop-03-m.mp3"}}, {"n": 4, "label": "'", "letters": "ء ع", "en": "A catch in the throat, like the stop in ‘uh-oh’. Listen for the end of hudoo'.", "from": "recovery-3", "same": true, "m": {"ar": "تنفس بهدوء", "tr": "tanaffas bi-hudoo'", "src": "a/recovery-03-m.mp3"}}, {"n": 5, "label": "g", "letters": "ق", "en": "In everyday Saudi speech ق is a hard g. Listen for gool.", "from": "theatre-12", "same": true, "m": {"ar": "قول لي إذا حسيت بألم", "tr": "gool li idha hassait bi-alam", "src": "a/theatre-12-m.mp3"}}, {"n": 6, "label": "q", "letters": "ق", "en": "Some words keep a q: a k made further back. Listen for sabaq.", "from": "preop-7", "same": true, "m": {"ar": "سبق وسويت تخدير؟", "tr": "sabaq wa sawwait takhdeer?", "src": "a/preop-07-m.mp3"}}, {"n": 7, "label": "dh", "letters": "ذ ظ ض", "en": "Like the th in ‘this’. Listen for dhahrak.", "from": "theatre-1", "same": true, "m": {"ar": "نام على ظهرك", "tr": "nam ala dhahrak", "src": "a/theatre-01-m.mp3"}}, {"n": 8, "label": "th", "letters": "ث", "en": "Like the th in ‘thin’. Listen for thabit.", "from": "theatre-9", "same": true, "m": {"ar": "خلك ثابت", "tr": "khallak thabit", "src": "a/theatre-09-m.mp3"}}, {"n": 9, "label": "aa ee oo", "letters": "", "en": "A doubled vowel is long: hold it. Listen for eewah.", "from": "start-5", "same": true, "m": {"ar": "إيوه. لا", "tr": "eewah. la.", "src": "a/start-05.mp3"}}, {"n": 10, "label": "Double letters", "letters": "", "en": "A doubled consonant is held a beat longer. Listen for fammak.", "from": "preop-10", "same": true, "m": {"ar": "تقدر تفتح فمك؟", "tr": "tigdar tiftah fammak?", "src": "a/preop-10-m.mp3"}}]}]};
+
+const PLAY = '<svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13a1 1 0 0 0 1.5.86l10.4-6.5a1 1 0 0 0 0-1.72L9.5 4.64A1 1 0 0 0 8 5.5z" fill="currentColor"/></svg>';
+const STOP = '<svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="6.5" width="11" height="11" rx="2" fill="currentColor"/></svg>';
+const RING = '<svg class="ring" viewBox="0 0 64 64" aria-hidden="true"><circle class="track" cx="32" cy="32" r="29.5"/><circle class="prog" cx="32" cy="32" r="29.5" pathLength="100" stroke-dasharray="100" stroke-dashoffset="100"/></svg>';
+const TURN = '<svg class="glyph" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v7a2.5 2.5 0 0 1-2.5 2.5H11l-4.6 3.4a.6.6 0 0 1-.95-.48V16A2.5 2.5 0 0 1 4 13.5z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="8.5" cy="10" r="1.1" fill="currentColor"/><circle cx="12" cy="10" r="1.1" fill="currentColor"/><circle cx="15.5" cy="10" r="1.1" fill="currentColor"/></svg>';
+const TICK = '<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>';
+const CROSS = '<svg class="mark" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 7l10 10M17 7L7 17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>';
+const TEASER = { start: "السلام عليكم", preop: "عندك حساسية", theatre: "خذ نفس عميق", recovery: "خلصت العملية",
+  type: "توافق؟", child: "ولدك", pain: "صفر لعشرة", mum: "لا تخاف حبيبي", back: "ما أدري", sounds: "خ ح ع ق" };
+const EASTERN = "٠١٢٣٤٥٦٧٨٩";
+
+const state = { who: "m", slow: false, practice: false, repeat: false, quiz: null, i: 0, sec: DATA.sections[0].id, revealed: new Set(), mode: null };
+const app = document.getElementById("app");
+const esc = s => String(s).replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+const secById = id => DATA.sections.find(s => s.id === id);
+// phrases with a recording; the sounds key reuses phrases, so it is not counted
+const total = DATA.sections.filter(s => s.id !== "sounds").reduce((a, s) => a + s.rows.filter(r => { const f = formFor(r, "m"); return f && f.src; }).length, 0);
+
+function formFor(row, who) {
+  if (row.only === "f") return row.f;
+  if (row.same) return row.m;
+  return row[who] || row.m || row.f;
+}
+function whoLabels(sec) {
+  if (sec.id === "pain" || sec.id === "mum" || sec.id === "sounds") return null;
+  if (sec.id === "back") return ["Said by a man", "Said by a woman", "Man", "Woman"];
+  if (sec.id === "child") return ["To the father", "To the mother", "Father", "Mother"];
+  return ["To a man", "To a woman", "Man", "Woman"];
+}
+function tagFor(sec, row) {
+  if (sec.id === "mum" || sec.id === "sounds") return "";
+  if (row.only === "f") return state.who === "m" ? "<b>Women only.</b> Shown in the form for a woman." : "<b>Women only.</b>";
+  if (row.same) return sec.id === "child" ? "Same for a father and a mother." : "Same for a man and a woman.";
+  return "";
+}
+const easternNum = n => String(n).split("").map(d => EASTERN[+d]).join("");
+
+/* ---------- audio ---------- */
+// One shared player. The clips for the card on screen and the next few are fetched ahead into memory,
+// so a tap plays at once; if this page may not play those copies, it plays the file itself.
+const player = new Audio();
+player.preload = "none";
+let activeBtn = null, raf = 0;
+// Listen & repeat: phase 1 = first hearing, 2 = the learner's gap (as long as the clip), 3 = second hearing.
+let phase = 0, gapTimer = 0;
+// token: only the newest tap may change the buttons; started: the sound has actually begun
+let token = 0, started = false, loadTimer = 0;
+const store = new Map();          // clip path -> { state: "loading" | "ready" | "failed", url }
+let memoryOK = true;              // false once the page refuses the in-memory copies
+const queue = []; let inflight = 0;
+function warm(src) {
+  if (!src || !memoryOK || store.has(src) || typeof fetch !== "function") return;
+  store.set(src, { state: "loading", url: null });
+  queue.push(src); pump();
+}
+function pump() {
+  while (inflight < 3 && queue.length) {
+    const src = queue.shift(), rec = store.get(src);
+    inflight++;
+    fetch(src).then(r => { if (!r.ok) throw new Error("HTTP " + r.status); return r.arrayBuffer(); })
+      .then(buf => { rec.url = URL.createObjectURL(new Blob([buf], { type: "audio/mpeg" })); rec.state = "ready"; })
+      .catch(() => { rec.state = "failed"; })
+      .finally(() => { inflight--; pump(); });
+  }
+}
+function rowSrcs(row) {
+  const out = [];
+  for (const who of ["m", "f"]) { const f = formFor(row, who); if (f && f.src && !out.includes(f.src)) out.push(f.src); }
+  return out;
+}
+function warmAround() {
+  // what is on screen first, then what comes next
+  document.querySelectorAll("[data-src]").forEach(b => warm(b.dataset.src));
+  if (state.quiz) { (state.quiz.qs || []).forEach(x => warm(x.item.form && x.item.form.src)); return; }
+  if (state.mode === "wide") { secById(state.sec).rows.forEach(r => rowSrcs(r).forEach(warm)); return; }
+  for (const k of [state.i + 1, state.i + 2, state.i - 1]) {
+    const c = deck[k];
+    if (c && c.r) rowSrcs(c.r).forEach(warm);
+    else if (c && c.s) c.s.rows.forEach(r => rowSrcs(r).forEach(warm));
+  }
+}
+function stopAudio() {
+  token++; started = false;
+  clearTimeout(loadTimer); clearTimeout(gapTimer); cancelAnimationFrame(raf);
+  player.pause();
+  if (activeBtn) { setBtn(activeBtn, false); setTurn(activeBtn, false); activeBtn.classList.remove("loading"); }
+  activeBtn = null; phase = 0;
+  document.querySelectorAll(".tile.on").forEach(t => t.classList.remove("on"));
+}
+function setBtn(btn, on) {
+  if (!btn.classList.contains("play")) { btn.classList.toggle("on", on); return; }
+  btn.classList.toggle("on", on);
+  const g = btn.querySelector(".glyph");
+  if (g) g.outerHTML = on ? STOP : PLAY;
+  btn.setAttribute("aria-label", (on ? "Stop" : "Play") + btn.dataset.say);
+  const p = btn.querySelector(".prog");
+  if (p && !on) p.setAttribute("stroke-dashoffset", "100");
+}
+function setTurn(btn, on, text) {
+  btn.classList.toggle("turn", on);
+  if (btn.classList.contains("play")) {
+    const g = btn.querySelector(".glyph");
+    if (g && on) g.outerHTML = TURN;
+    if (on) btn.setAttribute("aria-label", "Your turn: say it. Tap to stop.");
+  }
+  const act = btn.closest(".actions");
+  if (act) { act.classList.toggle("gap", !!text); const c = act.querySelector(".cue"); if (c) c.textContent = text || ""; }
+}
+function tick() {
+  if (!activeBtn) return;
+  const p = activeBtn.querySelector && activeBtn.querySelector(".prog");
+  if (p && player.duration) p.setAttribute("stroke-dashoffset", String(100 - 100 * player.currentTime / player.duration));
+  raf = requestAnimationFrame(tick);
+}
+function countdown(ms) {
+  const t0 = performance.now();
+  const step = () => {
+    if (!activeBtn || phase !== 2) return;
+    const p = activeBtn.querySelector && activeBtn.querySelector(".prog");
+    if (p) p.setAttribute("stroke-dashoffset", String(Math.min(100, 100 * (performance.now() - t0) / ms)));
+    raf = requestAnimationFrame(step);
+  };
+  raf = requestAnimationFrame(step);
+}
+function play(btn) {
+  const src = btn.dataset.src;
+  if (!src) return;
+  if (activeBtn === btn) {
+    if (phase === 1 && !started) return;                       // still on its way: a second tap must not cancel it
+    if (phase === 2 || !player.paused) { stopAudio(); return; }
+  }
+  stopAudio();
+  const my = ++token;
+  activeBtn = btn; phase = 1;
+  setTurn(btn, false); setBtn(btn, true); btn.classList.add("loading");
+  const rec = store.get(src);
+  begin(my, memoryOK && rec && rec.state === "ready" ? rec.url : src, src);
+  warm(src);
+}
+function begin(my, url, src) {
+  const fromMemory = url !== src;
+  player.src = url;
+  player.playbackRate = state.slow ? 0.75 : 1;
+  player.preservesPitch = true; player.webkitPreservesPitch = true;
+  clearTimeout(loadTimer);
+  loadTimer = setTimeout(() => { if (my === token && !started) failed(my, src, fromMemory); }, fromMemory ? 3000 : 10000);
+  const p = player.play();
+  if (p && p.catch) p.catch(e => { if (my === token && !started && !(e && e.name === "AbortError")) failed(my, src, fromMemory); });
+}
+function failed(my, src, fromMemory) {
+  if (my !== token) return;
+  if (fromMemory) { memoryOK = false; begin(my, src, src); return; }   // this page will not play the copy: play the file
+  const btn = activeBtn;
+  stopAudio();
+  if (btn && document.body.contains(btn)) setTurn(btn, false, "That didn't play. Tap again.");
+}
+player.addEventListener("playing", () => {
+  started = true; clearTimeout(loadTimer);
+  if (!activeBtn) return;
+  activeBtn.classList.remove("loading");
+  cancelAnimationFrame(raf); raf = requestAnimationFrame(tick);
+});
+player.addEventListener("waiting", () => { if (activeBtn && phase !== 2) activeBtn.classList.add("loading"); });
+player.addEventListener("error", () => {
+  if (!activeBtn || !started) return;                          // before it starts, play() reports the problem
+  const btn = activeBtn; stopAudio();
+  if (document.body.contains(btn)) setTurn(btn, false, "That didn't play. Tap again.");
+});
+player.addEventListener("ended", () => {
+  cancelAnimationFrame(raf);
+  const btn = activeBtn;
+  if (btn && phase === 1 && state.repeat && !state.quiz) {
+    // the gap: as long as the clip took, with a little room to start
+    phase = 2;
+    const ms = Math.max(1400, 1000 * (player.duration / (state.slow ? 0.75 : 1)) + 500);
+    setBtn(btn, false); setTurn(btn, true, "Your turn: say it");
+    const p = btn.querySelector(".prog"); if (p) p.setAttribute("stroke-dashoffset", "0");
+    countdown(ms);
+    const my = token;
+    gapTimer = setTimeout(() => {
+      if (my !== token || activeBtn !== btn || phase !== 2) return;
+      phase = 3; setTurn(btn, false, "Listen again"); setBtn(btn, true);
+      player.currentTime = 0;
+      const pr = player.play();
+      if (pr && pr.catch) pr.catch(e => { if (my === token && !(e && e.name === "AbortError")) stopAudio(); });
+    }, ms);
+    return;
+  }
+  if (btn) { setBtn(btn, false); setTurn(btn, false); btn.classList.remove("loading"); }
+  activeBtn = null; phase = 0; started = false;
+  document.querySelectorAll(".tile.on").forEach(t => t.classList.remove("on"));
+});
+
+function playButton(form, say, extra = "") {
+  if (!form || !form.src) return `<button class="play" disabled aria-label="Recording to come" title="Recording to come">${PLAY}</button><span class="missing">Recording to come</span>`;
+  return `<button class="play ${extra}" data-src="${esc(form.src)}" data-say="${esc(say)}" aria-label="Play${esc(say)}">${RING}${PLAY}</button>`;
+}
+function chips(form) {
+  return `<div class="slot"><div class="chips"><button class="chip" data-slow aria-pressed="${state.slow}">Slower</button></div><span class="cue" aria-live="polite"></span></div>`;
+}
+function sayBlock(sec, row, key, compact) {
+  const form = formFor(row, state.who);
+  if (state.practice && !state.revealed.has(key)) {
+    return `<button class="reveal" data-reveal="${key}"><span>Say it in Arabic first.</span>Then tap here to check and hear it.</button>`;
+  }
+  const tag = tagFor(sec, row);
+  return `<div class="say">
+      <p class="ar" lang="ar">${esc(form.ar)}</p>
+      <p class="tr" lang="ar-Latn">${esc(form.tr)}</p>
+      ${tag ? `<p class="tag">${tag}</p>` : ""}
+    </div>`;
+}
+
+/* ---------- phone ---------- */
+let deck = [];
+function buildDeck() {
+  deck = [{ kind: "toc" }];
+  for (const s of DATA.sections) {
+    if (s.id === "pain") { deck.push({ kind: "pain", s }); continue; }
+    s.rows.forEach((r, k) => deck.push({ kind: "phrase", s, r, k }));
+  }
+}
+function whoControl(sec) {
+  const labels = whoLabels(sec);
+  if (!labels) {
+    const t = sec.id === "pain" ? "Numbers" : sec.id === "sounds" ? "Sounds" : "To the mother";
+    return `<div class="fixed-who">${t}</div>`;
+  }
+  return `<div class="who${sec.id === "child" || sec.id === "back" ? " kin" : ""}" role="radiogroup" aria-label="${sec.id === "back" ? "Who is speaking" : "Who you are speaking to"}">
+    <button role="radio" aria-checked="${state.who === "m"}" data-who="m" aria-label="${labels[0]}"><span class="lg">${labels[0]}</span><span class="sm">${labels[2]}</span></button>
+    <button role="radio" aria-checked="${state.who === "f"}" data-who="f" aria-label="${labels[1]}"><span class="lg">${labels[1]}</span><span class="sm">${labels[3]}</span></button></div>`;
+}
+function tocList(current) {
+  return `<ol class="toc">${DATA.sections.map(s => `<li><button data-go="${s.id}" ${current === s.id ? 'aria-current="true"' : ""}>
+      <span class="t">${esc(s.title)}</span><span class="c">${s.rows.length}</span><span class="ar" lang="ar">${TEASER[s.id] || ""}</span></button></li>`).join("")}</ol>`;
+}
+function phoneToc() {
+  return `<div class="toc-card">
+    <h1>${esc(DATA.title)}</h1>
+    <p class="lede">${total} phrases from the anaesthetic room to recovery, each spoken by a Saudi voice.</p>
+    ${tocList(null)}
+    <div class="modes">${modeSwitches()}${quizEntry()}</div>
+    <p class="foot">Phrases: Dr Ganesh Sivasankara<br>Voices: Fahad and Layan (ElevenLabs)</p>
+  </div>`;
+}
+function modeSwitches() {
+  return `<label class="switch"><input type="checkbox" id="practice" ${state.practice ? "checked" : ""}><span class="knob"></span><span><b>Test yourself:</b> Arabic hidden until you tap</span></label>
+    <label class="switch"><input type="checkbox" id="repeat" ${state.repeat ? "checked" : ""}><span class="knob"></span><span><b>Listen &amp; repeat:</b> hear, say it, hear again</span></label>`;
+}
+function quizEntry() {
+  return `<button class="quiz-entry" data-quiz="open"><span class="t">Listening quiz</span><span class="d">Hear a phrase, pick the English. Ten questions.</span><span class="go" aria-hidden="true">›</span></button>`;
+}
+function phonePhrase(c) {
+  const { s, r, k } = c;
+  const key = s.id + "-" + r.n;
+  const form = formFor(r, state.who);
+  const hidden = state.practice && !state.revealed.has(key);
+  return `<div class="body">
+      ${r.label ? `<p class="label">${esc(r.label)}${r.letters ? ` <span class="letters" lang="ar">${esc(r.letters)}</span>` : ""}</p>` : ""}
+      <p class="en">${esc(r.en)}</p>
+      ${sayBlock(s, r, key)}
+    </div>
+    <div class="actions">${hidden ? "" : playButton(form, ": " + r.en) + chips(form)}</div>`;
+}
+function painTiles(s) {
+  return `<div class="tiles">${s.rows.map(r => {
+    const f = r.m;
+    return `<button class="tile" ${f.src ? `data-src="${esc(f.src)}" data-say="${esc(": " + r.n)}"` : "disabled"} aria-label="${r.n}: ${esc(f.tr)}">
+      <span class="d"><span class="w">${r.n}</span><span class="e" lang="ar">${easternNum(r.n)}</span></span>
+      <span class="ar" lang="ar">${esc(f.ar)}</span><span class="tr">${esc(f.tr)}</span></button>`; }).join("")}</div>`;
+}
+function painQuestion() {
+  const th = secById("theatre"), q = th.rows.find(r => r.n === 11);
+  if (!q) return "";
+  const f = formFor(q, "m");
+  return `<div class="pain-q">${playButton(f, ": " + q.en)}<div><p class="ar" lang="ar">${esc(f.ar)}</p><p class="tr">${esc(f.tr)}</p></div></div>`;
+}
+function phonePain(c) {
+  return `<div class="body"><p class="en">Ask for a score from zero to ten, then tap the number you hear.</p></div>
+    ${painQuestion()}${painTiles(c.s)}`;
+}
+/* ---------- listening quiz ---------- */
+const N_Q = 10;
+const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
+function quizPool(poolId) {
+  const items = [];
+  for (const s of DATA.sections) {
+    if (s.id === "sounds" || (poolId !== "all" && s.id !== poolId)) continue;
+    for (const r of s.rows) {
+      const form = formFor(r, state.who);
+      if (!form || !form.src) continue;
+      items.push({ s, r, form, text: s.id === "pain" ? String(r.n) : r.en, number: s.id === "pain" });
+    }
+  }
+  return items;
+}
+function makeQuestion(item, all) {
+  const same = all.filter(x => x.s.id === item.s.id && x.text !== item.text);
+  const other = all.filter(x => x.number === item.number && x.text !== item.text);
+  const seen = new Set([item.text]);
+  const pick = [];
+  for (const src of [same, other]) {
+    for (const x of shuffle(src.slice())) {
+      if (pick.length >= 2) break;
+      if (!seen.has(x.text)) { seen.add(x.text); pick.push(x); }
+    }
+    if (pick.length >= 2) break;
+  }
+  const options = shuffle([{ text: item.text, right: true }, ...pick.map(x => ({ text: x.text, right: false }))]);
+  return { item, options, picked: null };
+}
+function startQuiz(poolId) {
+  const all = quizPool("all");
+  const pool = quizPool(poolId);
+  const qs = shuffle(pool.slice()).slice(0, N_Q).map(it => makeQuestion(it, all));
+  state.quiz = { stage: "q", pool: poolId, qs, i: 0, score: 0 };
+}
+function quizTitle(poolId) { return poolId === "all" ? "All sections" : secById(poolId).title; }
+function quizSetup(q) {
+  const pools = [{ id: "all", title: "All sections", n: quizPool("all").length }, ...DATA.sections.map(s => ({ id: s.id, title: s.title, n: quizPool(s.id).length })).filter(p => p.n > 0)];
+  return `<div class="quiz">
+    <p class="lead">Hear a phrase, pick the English.</p>
+    <p class="hint">Ten questions, in the form for ${state.who === "m" ? "a man" : "a woman"}. Which phrases?</p>
+    <div class="pools" role="radiogroup" aria-label="Which phrases">${pools.map(p => `<button role="radio" aria-checked="${q.pool === p.id}" data-pool="${p.id}"><span class="t">${esc(p.title)}</span><span class="c">${p.n}</span></button>`).join("")}</div>
+    <div class="row"><button class="btn" data-quiz="start">Start</button></div>
+  </div>`;
+}
+function quizQuestion(q) {
+  const cur = q.qs[q.i];
+  const done = cur.picked !== null;
+  const right = cur.options.findIndex(o => o.right);
+  const ans = cur.item;
+  return `<div class="quiz" data-q="${q.i}">
+    <div class="listen">${playButton(ans.form, ": question " + (q.i + 1))}<div><p class="lead">${ans.number ? "Which number did you hear?" : "What did you hear?"}</p>
+      <div class="chips"><button class="chip" data-slow aria-pressed="${state.slow}">Slower</button></div></div></div>
+    <div class="opts">${cur.options.map((o, k) => {
+      const cls = done ? (o.right ? "opt right" : k === cur.picked ? "opt wrong" : "opt dim") : "opt";
+      return `<button class="${cls}" data-opt="${k}" ${done ? "disabled" : ""}><span class="k">${k + 1}</span><span>${esc(o.text)}</span>${o.right ? TICK : CROSS}</button>`; }).join("")}</div>
+    ${done ? `<div class="answer"><p class="verdict ${cur.picked === right ? "yes" : "no"}">${cur.picked === right ? "Right." : "Not this time."}</p>
+      <p class="ar" lang="ar">${esc(ans.form.ar)}</p><p class="tr" lang="ar-Latn">${esc(ans.form.tr)}</p></div>` : ""}
+  </div>`;
+}
+function quizEnd(q) {
+  const missed = q.qs.filter(x => !x.options[x.picked].right);
+  return `<div class="quiz">
+    <p class="score">${q.score} of ${q.qs.length}</p>
+    <p class="hint">${missed.length ? "The ones to listen to again:" : "Every one right."}</p>
+    ${missed.length ? `<ul class="missed">${missed.map(x => `<li><span class="en">${esc(x.item.number ? "Number " + x.item.text : x.item.text)}</span><span class="ar" lang="ar">${esc(x.item.form.ar)}</span><span class="tr">${esc(x.item.form.tr)}</span></li>`).join("")}</ul>` : ""}
+    <div class="row"><button class="btn" data-quiz="again">Again</button><button class="btn ghost" data-quiz="quit">${state.mode === "wide" ? "Back to the phrases" : "Contents"}</button></div>
+  </div>`;
+}
+function quizBody() {
+  const q = state.quiz;
+  return q.stage === "setup" ? quizSetup(q) : q.stage === "q" ? quizQuestion(q) : quizEnd(q);
+}
+function quizWhere() {
+  const q = state.quiz;
+  return q.stage === "q" ? `${q.i + 1} of ${q.qs.length}` : q.stage === "end" ? quizTitle(q.pool) : "";
+}
+function answer(k) {
+  const q = state.quiz;
+  if (!q || q.stage !== "q") return;
+  const cur = q.qs[q.i];
+  if (cur.picked !== null || !cur.options[k]) return;
+  cur.picked = k; if (cur.options[k].right) q.score++;
+  render();
+}
+function quizNext() {
+  const q = state.quiz;
+  if (q.i + 1 >= q.qs.length) { q.stage = "end"; render(); return; }
+  q.i++; render(); autoPlay();
+}
+function autoPlay() { const b = document.querySelector(".quiz .play[data-src]"); if (b) play(b); }
+
+function renderPhone() {
+  const c = deck[state.i];
+  const sec = c.s;
+  let top = "", stage = "";
+  if (state.quiz) {
+    const q = state.quiz;
+    const pct = q.stage === "q" ? Math.round(100 * (q.i + (q.qs[q.i].picked !== null ? 1 : 0)) / q.qs.length) : q.stage === "end" ? 100 : 0;
+    top = `<div class="top"><button class="back" data-quiz="quit">‹ Quit</button><p class="where"><b>Listening quiz</b>${quizWhere()}</p><span class="progress" style="width:${pct}%"></span></div>`;
+    const cur = q.stage === "q" ? q.qs[q.i] : null;
+    const dock = `<nav class="dock" aria-label="Quiz"><span></span>${q.stage === "setup" ? whoControl(DATA.sections[0]) : `<span class="fixed-who">${esc(quizTitle(q.pool))}</span>`}
+      ${cur && cur.picked !== null ? `<button class="nav next" data-quiz="next">${q.i + 1 >= q.qs.length ? "Finish ›" : "Next ›"}</button>` : "<span></span>"}</nav>`;
+    app.innerHTML = `<div class="phone">${top}<main class="stage" id="stage">${quizBody()}</main>${dock}</div>`;
+    fit();
+    return;
+  }
+  if (c.kind === "toc") {
+    stage = phoneToc();
+  } else {
+    const pos = c.kind === "pain" ? "" : `${c.k + 1} of ${sec.rows.length}`;
+    const pct = c.kind === "pain" ? 100 : Math.round(100 * (c.k + 1) / sec.rows.length);
+    top = `<div class="top"><button class="back" data-toc>‹ Contents</button><p class="where"><b>${esc(sec.title)}</b>${pos}</p><span class="progress" style="width:${pct}%"></span></div>`;
+    stage = c.kind === "pain" ? phonePain(c) : phonePhrase(c);
+  }
+  const atEnd = state.i === deck.length - 1;
+  const dock = `<nav class="dock" aria-label="Cards">
+      <button class="nav prev" data-prev ${state.i === 0 ? "disabled" : ""}>‹ Back</button>
+      ${c.kind === "toc" ? whoControl(DATA.sections[0]) : whoControl(sec)}
+      <button class="nav next" data-next ${atEnd ? "disabled" : ""}>${state.i === 0 ? "Start ›" : "Next ›"}</button></nav>`;
+  app.innerHTML = `<div class="phone">${top || "<div></div>"}<main class="${c.kind === "toc" ? "" : "stage"}" id="stage">${stage}</main>${dock}</div>`;
+  fit();
+}
+function fit() {
+  const tc = document.querySelector(".toc-card");
+  if (tc) { tc.dataset.fit = "0"; for (let k = 1; k <= 5 && tc.scrollHeight > tc.clientHeight + 1; k++) tc.dataset.fit = String(k); }
+  const st = document.getElementById("stage");
+  if (!st || !st.classList.contains("stage")) return;
+  st.dataset.fit = "0";
+  for (let k = 1; k <= 4 && st.scrollHeight > st.clientHeight + 1; k++) st.dataset.fit = String(k);
+}
+
+/* ---------- wide ---------- */
+function wideCard(s, r) {
+  const key = s.id + "-" + r.n;
+  const form = formFor(r, state.who);
+  const hidden = state.practice && !state.revealed.has(key);
+  return `<article class="card" id="${key}">
+      <div class="head"><span class="n">${r.n}</span>${r.label ? `<span class="label">${esc(r.label)}${r.letters ? ` <span class="letters" lang="ar">${esc(r.letters)}</span>` : ""}</span>` : ""}</div>
+      <p class="en">${esc(r.en)}</p>
+      ${sayBlock(s, r, key)}
+      ${hidden ? "" : `<div class="actions">${playButton(form, ": " + r.en)}<div class="slot"><div class="chips"></div><span class="cue" aria-live="polite"></span></div></div>`}
+    </article>`;
+}
+function renderWide() {
+  const s = secById(state.sec);
+  const idx = DATA.sections.indexOf(s);
+  const nxt = DATA.sections[idx + 1];
+  const labels = whoLabels(s);
+  const body = s.id === "pain"
+    ? `<div class="pain-wide">${painQuestion()}${painTiles(s)}</div>`
+    : `<div class="grid">${s.rows.map(r => wideCard(s, r)).join("")}</div>`;
+  app.innerHTML = `<div class="wide">
+    <aside class="rail">
+      <h1>${esc(DATA.title)}</h1>
+      <p class="lede">${total} phrases from the anaesthetic room to recovery, each one spoken by a Saudi voice.</p>
+      <div class="group"><span class="k">${labels ? (s.id === "back" ? "Who is speaking" : "Speaking") : s.id === "pain" ? "Numbers are the same for everyone" : s.id === "sounds" ? "Examples from the phrases" : "Said to the mother of a boy"}</span>${labels ? whoControl(s) : ""}</div>
+      <div class="group">
+        <button class="chip" data-slow aria-pressed="${state.slow}">Play slower</button>
+        ${modeSwitches()}
+        ${quizEntry()}
+      </div>
+      <nav aria-label="Sections">${tocList(state.quiz ? null : s.id)}</nav>
+      <div class="foot"><span>Phrases by Dr Ganesh Sivasankara · MD · FRCA · FCARCSI · Consultant Anaesthetist.</span><span>Voices: Fahad and Layan, made with ElevenLabs.</span></div>
+    </aside>
+    <main class="sheet">
+      ${state.quiz ? `<header class="sec-head"><h2>Listening quiz</h2><p class="meta">${esc(state.quiz.stage === "setup" ? "Hear a phrase, pick the English" : quizTitle(state.quiz.pool) + (state.quiz.stage === "q" ? " · question " + quizWhere() : ""))}</p></header>
+        <div class="quiz-wide">${quizBody()}
+        ${state.quiz.stage === "q" && state.quiz.qs[state.quiz.i].picked !== null ? `<div class="row"><button class="btn" data-quiz="next">${state.quiz.i + 1 >= state.quiz.qs.length ? "Finish ›" : "Next ›"}</button><button class="btn ghost" data-quiz="quit">Quit</button></div>` : state.quiz.stage === "q" ? `<div class="row"><button class="btn ghost" data-quiz="quit">Quit</button></div>` : ""}</div>`
+      : `<header class="sec-head"><h2>${esc(s.title)}</h2><p class="meta">${s.rows.length} ${s.id === "pain" ? "numbers" : s.id === "sounds" ? "sounds" : "phrases"}</p>${s.note ? `<p class="note">${esc(s.note)}</p>` : ""}</header>
+      ${body}
+      ${nxt ? `<div class="sec-foot"><button data-go="${nxt.id}">Next: ${esc(nxt.title)} ›</button></div>` : ""}`}
+    </main></div>`;
+}
+
+/* ---------- control ---------- */
+function isWide() { return window.innerWidth >= 760; }
+function render() {
+  stopAudio();
+  state.mode = isWide() ? "wide" : "phone";
+  if (state.mode === "wide") renderWide(); else renderPhone();
+  warmAround();
+}
+function goSection(id) {
+  state.revealed.clear(); state.quiz = null;
+  if (state.mode === "wide") { state.sec = id; render(); window.scrollTo(0, 0); return; }
+  state.i = deck.findIndex(c => c.s && c.s.id === id);
+  render();
+}
+function quizAction(a) {
+  if (a === "open") { state.quiz = { stage: "setup", pool: state.quiz ? state.quiz.pool : "all" }; render(); window.scrollTo(0, 0); return; }
+  if (a === "start" || a === "again") { startQuiz(state.quiz ? state.quiz.pool : "all"); render(); window.scrollTo(0, 0); autoPlay(); return; }
+  if (a === "next") { quizNext(); return; }
+  if (a === "quit") { state.quiz = null; if (state.mode !== "wide") state.i = 0; render(); window.scrollTo(0, 0); }
+}
+function step(d) {
+  const j = state.i + d;
+  if (j < 0 || j >= deck.length) return;
+  state.i = j; state.revealed.clear();
+  const c = deck[j]; if (c.s) state.sec = c.s.id;
+  render();
+}
+app.addEventListener("click", e => {
+  const b = e.target.closest("button, input");
+  if (!b) return;
+  if (b.matches(".play[data-src]")) { play(b); return; }
+  if (b.matches(".tile[data-src]")) { const on = activeBtn === b && (phase === 2 || !player.paused); play(b); if (!on) b.classList.add("on"); return; }
+  if (b.dataset.who) { state.who = b.dataset.who; render(); return; }
+  if (b.hasAttribute("data-next")) { step(1); return; }
+  if (b.hasAttribute("data-prev")) { step(-1); return; }
+  if (b.hasAttribute("data-toc")) { state.i = 0; render(); return; }
+  if (b.dataset.go) { goSection(b.dataset.go); return; }
+  if (b.dataset.quiz) { quizAction(b.dataset.quiz); return; }
+  if (b.dataset.pool) { state.quiz.pool = b.dataset.pool; render(); return; }
+  if (b.dataset.opt !== undefined) { answer(+b.dataset.opt); return; }
+  if (b.hasAttribute("data-slow")) { state.slow = !state.slow; player.playbackRate = state.slow ? 0.75 : 1;
+    document.querySelectorAll("[data-slow]").forEach(x => x.setAttribute("aria-pressed", String(state.slow))); return; }
+  if (b.dataset.reveal) {
+    state.revealed.add(b.dataset.reveal); render();
+    const holder = state.mode === "wide" ? document.getElementById(b.dataset.reveal) : document;
+    const p = holder && holder.querySelector(".play[data-src]"); if (p) play(p);
+    return;
+  }
+});
+app.addEventListener("change", e => {
+  if (e.target.id === "practice") { state.practice = e.target.checked; state.revealed.clear(); render(); }
+  if (e.target.id === "repeat") { state.repeat = e.target.checked; document.querySelectorAll("#repeat").forEach(x => { x.checked = state.repeat; }); }
+});
+document.addEventListener("keydown", e => {
+  if (e.target.matches("input, textarea")) return;
+  if (state.quiz) {
+    const q = state.quiz;
+    if (q.stage === "q" && e.key === "ArrowRight" && q.qs[q.i].picked !== null) quizNext();
+    else if (q.stage === "q" && /^[1-3]$/.test(e.key)) answer(+e.key - 1);
+    return;
+  }
+  if (state.mode !== "phone") return;
+  if (e.key === "ArrowRight") step(1); else if (e.key === "ArrowLeft") step(-1);
+});
+let sx = 0, sy = 0;
+app.addEventListener("touchstart", e => { const t = e.touches[0]; sx = t.clientX; sy = t.clientY; }, { passive: true });
+app.addEventListener("touchend", e => {
+  if (state.mode !== "phone" || state.quiz) return;
+  const t = e.changedTouches[0], dx = t.clientX - sx, dy = t.clientY - sy;
+  if (Math.abs(dx) > 60 && Math.abs(dx) > 1.5 * Math.abs(dy)) step(dx < 0 ? 1 : -1);
+}, { passive: true });
+let rz = 0;
+window.addEventListener("resize", () => { clearTimeout(rz); rz = setTimeout(() => {
+  const m = isWide() ? "wide" : "phone";
+  if (m !== state.mode) render(); else if (m === "phone") fit();
+}, 120); });
+
+buildDeck();
+render();
+if (document.fonts && document.fonts.ready) document.fonts.ready.then(() => { if (state.mode === "phone") fit(); });
+</script>
+</body>
+</html>
