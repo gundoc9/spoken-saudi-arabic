@@ -580,7 +580,7 @@ function phoneToc() {
     <p class="lede">${total} phrases from the anaesthetic room to recovery, each spoken by a Saudi voice.</p>
     ${tocList(null)}
     <div class="modes">${modeSwitches()}${quizEntry()}</div>
-    <p class="foot">Phrases: Dr Ganesh Sivasankara<br>Voices: Fahad and Layan (ElevenLabs)</p>
+    <p class="foot">Phrases: Dr Ganesh Sivasankara · MD · FRCA · FCARCSI · Consultant Anaesthetist<br>Built with Claude (Anthropic). The phrases are mine; the voices are Fahad and Layan, made with ElevenLabs.</p>
   </div>`;
 }
 function modeSwitches() {
@@ -783,7 +783,7 @@ function renderWide() {
         ${quizEntry()}
       </div>
       <nav aria-label="Sections">${tocList(state.quiz ? null : s.id)}</nav>
-      <div class="foot"><span>Phrases by Dr Ganesh Sivasankara · MD · FRCA · FCARCSI · Consultant Anaesthetist.</span><span>Voices: Fahad and Layan, made with ElevenLabs.</span></div>
+      <div class="foot"><span>Phrases by Dr Ganesh Sivasankara · MD · FRCA · FCARCSI · Consultant Anaesthetist.</span><span>Built with Claude (Anthropic). The phrases are mine; the voices are Fahad and Layan, made with ElevenLabs.</span><span>Updated 26 October 2026.</span><span>This page keeps nothing about you and sends nothing anywhere.</span><span>© 2026 Ganesh Sivasankara. Shared under <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" rel="noopener">CC BY-NC-ND 4.0</a>: you may share it unchanged, with credit, but not for commercial use.</span><span>Spotted an error? <a href="https://www.linkedin.com/in/ganeshsivasankara" target="_blank" rel="noopener">Message me on LinkedIn</a>.</span></div>
     </aside>
     <main class="sheet">
       ${state.quiz ? `<header class="sec-head"><h2>Listening quiz</h2><p class="meta">${esc(state.quiz.stage === "setup" ? "Hear a phrase, pick the English" : quizTitle(state.quiz.pool) + (state.quiz.stage === "q" ? " · question " + quizWhere() : ""))}</p></header>
